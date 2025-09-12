@@ -213,10 +213,11 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
   const stop = () => {
     if (player) {
       player.pause();
+      // 位置を0にリセット
+      player.seek(0);
       setCurrentTrack(null);
       setIsPlaying(false);
       setPosition(0);
-      // 位置を0にリセット（Spotify Web Playback SDKでは直接サポートされていないため、代替手段が必要）
     }
   };
 
@@ -429,6 +430,8 @@ declare global {
         nextTrack: () => void;
         previousTrack: () => void;
         setVolume: (volume: number) => void;
+        seek: (position_ms: number) => void;
+        getCurrentState: () => Promise<any>;
       };
     };
   }
