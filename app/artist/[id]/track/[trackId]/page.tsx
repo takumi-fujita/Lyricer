@@ -33,6 +33,17 @@ interface SpotifyTrack {
     spotify: string;
   };
   explicit: boolean;
+  // 楽曲の詳細情報
+  available_markets: string[];
+  disc_number: number;
+  track_number: number;
+  // 作詞・作曲者情報（Spotify APIから取得）
+  artists_details?: Array<{
+    id: string;
+    name: string;
+    genres: string[];
+    popularity: number;
+  }>;
 }
 
 interface LyricsData {
@@ -41,6 +52,7 @@ interface LyricsData {
   lines: Array<{
     startTimeMs: string;
     words: string;
+    part?: string; // パート情報を追加
     syllables: Array<{
       startTimeMs: string;
       endTimeMs: string;
@@ -94,32 +106,68 @@ export default function TrackPage({ params }: TrackPageProps) {
         }
 
         const trackData = await trackResponse.json();
-        setTrack(trackData);
-
-        // 歌詞を取得（仮の実装）
-        // 実際の実装では歌詞APIを使用
-        const mockLyrics: LyricsData = {
-          lyrics: `${trackData.name}の歌詞\n\n[歌詞がここに表示されます]\n\n実際の実装では、歌詞APIから取得した歌詞が表示されます。`,
-          syncType: "LINE_SYNCED",
-          lines: [
-            {
-              startTimeMs: "0",
-              words: `${trackData.name}の歌詞`,
-              syllables: []
-            },
-            {
-              startTimeMs: "2000",
-              words: "[歌詞がここに表示されます]",
-              syllables: []
-            },
-            {
-              startTimeMs: "4000",
-              words: "実際の実装では、歌詞APIから取得した歌詞が表示されます。",
-              syllables: []
+        
+        // アーティストの詳細情報を取得
+        const artistDetailsPromises = trackData.artists.map(async (artist: any) => {
+          try {
+            const artistResponse = await fetch(`/api/spotify/artists/${artist.id}`, {
+              headers: {
+                Authorization: `Bearer ${accessToken}`,
+              },
+            });
+            if (artistResponse.ok) {
+              const artistData = await artistResponse.json();
+              return {
+                id: artist.id,
+                name: artist.name,
+                genres: artistData.genres || [],
+                popularity: artistData.popularity || 0,
+              };
             }
-          ]
+            return {
+              id: artist.id,
+              name: artist.name,
+              genres: [],
+              popularity: 0,
+            };
+          } catch (error) {
+            console.error(`Error fetching artist ${artist.id}:`, error);
+            return {
+              id: artist.id,
+              name: artist.name,
+              genres: [],
+              popularity: 0,
+            };
+          }
+        });
+        
+        const artistsDetails = await Promise.all(artistDetailsPromises);
+        const trackWithDetails = {
+          ...trackData,
+          artists_details: artistsDetails,
         };
-        setLyrics(mockLyrics);
+        
+        setTrack(trackWithDetails);
+
+        // 歌詞を取得
+        const lyricsResponse = await fetch(`/api/artist/${resolvedParams.id}/track/${resolvedParams.trackId}/lyric`, {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        });
+
+        if (lyricsResponse.ok) {
+          const lyricsData = await lyricsResponse.json();
+          setLyrics(lyricsData);
+        } else {
+          // 歌詞が見つからない場合は空の歌詞を設定
+          const emptyLyrics: LyricsData = {
+            lyrics: "歌詞が見つかりませんでした",
+            syncType: "LINE_SYNCED",
+            lines: []
+          };
+          setLyrics(emptyLyrics);
+        }
 
       } catch (err) {
         console.error("楽曲・歌詞取得エラー:", err);
@@ -212,6 +260,28 @@ export default function TrackPage({ params }: TrackPageProps) {
                 <span className="mx-2">•</span>
                 <span>{formatDuration(track.duration_ms)}</span>
               </div>
+              
+              {/* 作詞・作曲者情報 */}
+              <div className="mb-6">
+                <h3 className="text-sm font-semibold text-foreground-600 uppercase tracking-wide mb-3">
+                  作詞・作曲者
+                </h3>
+                <div className="space-y-2">
+                  {track.artists_details?.map((artist, index) => (
+                    <div key={artist.id} className="text-sm">
+                      <div className="font-medium text-foreground-700">
+                        {artist.name}
+                      </div>
+                      {artist.genres.length > 0 && (
+                        <div className="text-xs text-foreground-500 mt-1">
+                          ジャンル: {artist.genres.slice(0, 3).join(", ")}
+                          {artist.genres.length > 3 && "..."}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
               <div className="flex items-center gap-4 mb-4">
                 <Button
                   color="primary"
@@ -232,8 +302,21 @@ export default function TrackPage({ params }: TrackPageProps) {
           <CardBody className="p-8">
             <h2 className="text-2xl font-bold text-foreground mb-6">歌詞</h2>
             {lyrics ? (
-              <div className="whitespace-pre-line text-foreground-700 leading-relaxed">
-                {lyrics.lyrics}
+              <div className="space-y-4">
+                {lyrics.lines.map((line, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    {line.part && (
+                      <div className="flex-shrink-0">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full">
+                          {line.part}
+                        </span>
+                      </div>
+                    )}
+                    <div className="flex-1 text-foreground-700 leading-relaxed">
+                      {line.words}
+                    </div>
+                  </div>
+                ))}
               </div>
             ) : (
               <div className="text-center py-12">

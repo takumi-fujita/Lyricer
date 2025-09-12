@@ -64,6 +64,9 @@ export async function GET(
       preview_url: data.preview_url,
       external_urls: data.external_urls,
       explicit: data.explicit,
+      available_markets: data.available_markets,
+      disc_number: data.disc_number,
+      track_number: data.track_number,
     };
 
     return NextResponse.json(track);
