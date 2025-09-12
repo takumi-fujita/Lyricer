@@ -2,6 +2,7 @@ import { Card, CardBody } from "@heroui/card";
 import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
 import { PlayIcon } from "./icons";
+import Link from "next/link";
 
 interface Song {
   id: string;
@@ -31,9 +32,10 @@ interface Song {
 
 interface SongCardProps {
   song: Song;
+  artistId?: string;
 }
 
-export default function SongCard({ song }: SongCardProps) {
+export default function SongCard({ song, artistId }: SongCardProps) {
   const formatDuration = (ms: number) => {
     const minutes = Math.floor(ms / 60000);
     const seconds = Math.floor((ms % 60000) / 1000);
@@ -77,16 +79,31 @@ export default function SongCard({ song }: SongCardProps) {
             <span>{formatDuration(song.duration_ms)}</span>
           </div>
           
-          <Button
-            color="primary"
-            variant="solid"
-            size="sm"
-            className="w-full"
-            startContent={<PlayIcon className="w-4 h-4" />}
-            onClick={handlePlay}
-          >
-            Spotifyで聴く
-          </Button>
+          <div className="flex flex-col gap-2">
+            <Button
+              color="primary"
+              variant="solid"
+              size="sm"
+              className="w-full"
+              startContent={<PlayIcon className="w-4 h-4" />}
+              onClick={handlePlay}
+            >
+              Spotifyで聴く
+            </Button>
+            
+            {artistId && (
+              <Link href={`/artist/${artistId}/track/${song.id}`}>
+                <Button
+                  color="secondary"
+                  variant="bordered"
+                  size="sm"
+                  className="w-full"
+                >
+                  歌詞を見る
+                </Button>
+              </Link>
+            )}
+          </div>
         </div>
       </CardBody>
     </Card>

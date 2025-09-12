@@ -238,7 +238,7 @@ export default function SongSearch({ artistId }: SongSearchProps) {
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredTracks.map((track, index) => (
-              <SongCard key={`${track.id}-${index}`} song={track} />
+              <SongCard key={`${track.id}-${index}`} song={track} artistId={artistId} />
             ))}
           </div>
           
