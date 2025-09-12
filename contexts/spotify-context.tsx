@@ -83,7 +83,10 @@ export function SpotifyProvider({ children }: { children: ReactNode }) {
       "user-top-read",
       "user-read-recently-played",
       "playlist-read-private",
-      "playlist-read-collaborative"
+      "playlist-read-collaborative",
+      "streaming",
+      "user-read-playback-state",
+      "user-modify-playback-state"
     ].join(" ");
     
     const authUrl = `https://accounts.spotify.com/authorize?` +

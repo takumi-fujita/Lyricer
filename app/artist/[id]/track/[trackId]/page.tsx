@@ -8,6 +8,7 @@ import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
 import { ArrowLeftIcon, PlayIcon } from "../../../../../components/icons";
 import { useSpotify } from "@/contexts/spotify-context";
+import SpotifyPlayer from "../../../../../components/spotify-player";
 
 interface SpotifyTrack {
   id: string;
@@ -74,6 +75,8 @@ export default function TrackPage({ params }: TrackPageProps) {
   const [lyrics, setLyrics] = useState<LyricsData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [currentPlayingTrack, setCurrentPlayingTrack] = useState<any>(null);
+  const [currentPosition, setCurrentPosition] = useState(0);
   const { accessToken, isLoading: spotifyLoading } = useSpotify();
   
   // React.use()でparamsを取得
@@ -216,8 +219,33 @@ export default function TrackPage({ params }: TrackPageProps) {
   };
 
   const handlePlay = () => {
-    // Spotifyで開く
-    window.open(track.external_urls.spotify, '_blank');
+    // Lyricer Playerで再生（currentTrackUriが設定されることで自動再生される）
+    console.log("Playing track in Lyricer Player:", track.id);
+  };
+
+  // 現在再生中の楽曲が変更された時の処理
+  const handleTrackChange = (playingTrack: any) => {
+    setCurrentPlayingTrack(playingTrack);
+  };
+
+  // 現在の再生位置を更新
+  const handlePositionUpdate = (position: number) => {
+    setCurrentPosition(position);
+  };
+
+  // 歌詞のハイライト表示を判定
+  const getCurrentLyricIndex = () => {
+    if (!lyrics || !currentPlayingTrack) return -1;
+    
+    // 現在再生中の楽曲が表示中の楽曲と一致するかチェック
+    if (currentPlayingTrack.id !== resolvedParams.trackId) return -1;
+    
+    // 現在の再生位置に基づいて歌詞のインデックスを計算
+    // 仮の時間計算（実際の歌詞データにstartTimeMsがあればそれを使用）
+    const currentTimeMs = currentPosition;
+    const lyricIndex = Math.floor(currentTimeMs / 2000); // 2秒間隔で仮定
+    
+    return lyricIndex >= 0 && lyricIndex < lyrics.lines.length ? lyricIndex : -1;
   };
 
   return (
@@ -298,26 +326,54 @@ export default function TrackPage({ params }: TrackPageProps) {
           </div>
         </div>
 
+        {/* Spotify Player */}
+        {accessToken && (
+          <div className="mb-8">
+            <SpotifyPlayer 
+              accessToken={accessToken} 
+              onTrackChange={handleTrackChange}
+              onPositionUpdate={handlePositionUpdate}
+              currentTrackUri={track ? `spotify:track:${track.id}` : undefined}
+            />
+          </div>
+        )}
+
         {/* 歌詞表示 */}
         <Card>
           <CardBody className="p-8">
             <h2 className="text-2xl font-bold text-foreground mb-6">歌詞</h2>
             {lyrics ? (
               <div className="space-y-4">
-                {lyrics.lines.map((line, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    {line.part && (
-                      <div className="flex-shrink-0">
-                        <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary">
-                          <span className={line.color || 'text-primary'}>{line.part}</span>
-                        </span>
+                {lyrics.lines.map((line, index) => {
+                  const isCurrentLyric = getCurrentLyricIndex() === index;
+                  return (
+                    <div 
+                      key={index} 
+                      className={`flex items-start gap-4 p-3 rounded-lg transition-all duration-300 ${
+                        isCurrentLyric 
+                          ? 'bg-primary/10 border-l-4 border-primary shadow-md' 
+                          : 'hover:bg-default-50'
+                      }`}
+                    >
+                      {line.part && (
+                        <div className="flex-shrink-0">
+                          <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary ${
+                            isCurrentLyric ? 'ring-2 ring-primary ring-offset-2' : ''
+                          }`}>
+                            <span className={line.color || 'text-primary'}>{line.part}</span>
+                          </span>
+                        </div>
+                      )}
+                      <div className={`flex-1 leading-relaxed transition-all duration-300 ${
+                        isCurrentLyric 
+                          ? 'text-primary font-semibold text-lg' 
+                          : 'text-foreground-700'
+                      }`}>
+                        {line.words}
                       </div>
-                    )}
-                    <div className="flex-1 text-foreground-700 leading-relaxed">
-                      {line.words}
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             ) : (
               <div className="text-center py-12">

@@ -329,3 +329,57 @@ export const ArrowLeftIcon = (props: IconSvgProps) => (
     />
   </svg>
 );
+
+export const PauseIcon = (props: IconSvgProps) => (
+  <svg
+    aria-hidden="true"
+    fill="none"
+    focusable="false"
+    height="1em"
+    role="presentation"
+    viewBox="0 0 24 24"
+    width="1em"
+    {...props}
+  >
+    <path
+      d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export const SkipNextIcon = (props: IconSvgProps) => (
+  <svg
+    aria-hidden="true"
+    fill="none"
+    focusable="false"
+    height="1em"
+    role="presentation"
+    viewBox="0 0 24 24"
+    width="1em"
+    {...props}
+  >
+    <path
+      d="M6 18L14.5 12L6 6V18ZM16 6V18H18V6H16Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export const SkipPreviousIcon = (props: IconSvgProps) => (
+  <svg
+    aria-hidden="true"
+    fill="none"
+    focusable="false"
+    height="1em"
+    role="presentation"
+    viewBox="0 0 24 24"
+    width="1em"
+    {...props}
+  >
+    <path
+      d="M6 6H8V18H6V6ZM9.5 12L18 6V18L9.5 12Z"
+      fill="currentColor"
+    />
+  </svg>
+);
