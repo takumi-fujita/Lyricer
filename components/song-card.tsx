@@ -1,7 +1,5 @@
 import { Card, CardBody } from "@heroui/card";
 import { Image } from "@heroui/image";
-import { Button } from "@heroui/button";
-import { PlayIcon } from "./icons";
 import Link from "next/link";
 
 interface Song {
@@ -47,65 +45,69 @@ export default function SongCard({ song, artistId }: SongCardProps) {
     return date.getFullYear().toString();
   };
 
-  const handlePlay = () => {
-    // Spotifyで開く
-    window.open(song.external_urls.spotify, '_blank');
-  };
+  if (!artistId) {
+    return (
+      <Card className="w-full hover:shadow-lg transition-all duration-300 hover:scale-105">
+        <CardBody className="p-0">
+          <div className="w-full flex justify-center">
+            <Image
+              alt={song.name}
+              className="object-cover w-full h-48"
+              src={song.album.images[0]?.url || "/placeholder-album.svg"}
+              fallbackSrc="/placeholder-album.svg"
+              width={300}
+              height={300}
+            />
+          </div>
+          
+          <div className="px-4 py-3">
+            <h3 className="text-lg font-bold text-foreground mb-2 line-clamp-2">
+              {song.name}
+            </h3>
+            <p className="text-sm text-default-500 mb-3 line-clamp-1">
+              {song.artists.map(artist => artist.name).join(", ")}
+            </p>
+            
+            <div className="flex items-center justify-between text-sm text-default-400">
+              <span>{formatReleaseDate(song.album.release_date)}</span>
+              <span>{formatDuration(song.duration_ms)}</span>
+            </div>
+          </div>
+        </CardBody>
+      </Card>
+    );
+  }
 
   return (
-    <Card className="w-full hover:shadow-lg transition-all duration-300 hover:scale-105">
-      <CardBody className="p-0">
-        <div className="w-full flex justify-center">
-          <Image
-            alt={song.name}
-            className="object-cover w-full h-48"
-            src={song.album.images[0]?.url || "/placeholder-album.svg"}
-            fallbackSrc="/placeholder-album.svg"
-            width={300}
-            height={300}
-          />
-        </div>
-        
-        <div className="px-4 py-3">
-          <h3 className="text-lg font-bold text-foreground mb-2 line-clamp-2">
-            {song.name}
-          </h3>
-          <p className="text-sm text-default-500 mb-3 line-clamp-1">
-            {song.artists.map(artist => artist.name).join(", ")}
-          </p>
-          
-          <div className="flex items-center justify-between text-sm text-default-400 mb-4">
-            <span>{formatReleaseDate(song.album.release_date)}</span>
-            <span>{formatDuration(song.duration_ms)}</span>
+    <Link href={`/artist/${artistId}/track/${song.id}`}>
+      <Card className="w-full hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
+        <CardBody className="p-0">
+          <div className="w-full flex justify-center">
+            <Image
+              alt={song.name}
+              className="object-cover w-full h-48"
+              src={song.album.images[0]?.url || "/placeholder-album.svg"}
+              fallbackSrc="/placeholder-album.svg"
+              width={300}
+              height={300}
+            />
           </div>
           
-          <div className="flex flex-col gap-2">
-            <Button
-              color="primary"
-              variant="solid"
-              size="sm"
-              className="w-full"
-              startContent={<PlayIcon className="w-4 h-4" />}
-              onClick={handlePlay}
-            >
-              Spotifyで聴く
-            </Button>
+          <div className="px-4 py-3">
+            <h3 className="text-lg font-bold text-foreground mb-2 line-clamp-2">
+              {song.name}
+            </h3>
+            <p className="text-sm text-default-500 mb-3 line-clamp-1">
+              {song.artists.map(artist => artist.name).join(", ")}
+            </p>
             
-            {artistId && (
-              <Link href={`/artist/${artistId}/track/${song.id}`}>
-                <Button
-                  color="secondary"
-                  variant="bordered"
-                  size="sm"
-                  className="w-full"
-                >
-                  歌詞を見る
-                </Button>
-              </Link>
-            )}
+            <div className="flex items-center justify-between text-sm text-default-400">
+              <span>{formatReleaseDate(song.album.release_date)}</span>
+              <span>{formatDuration(song.duration_ms)}</span>
+            </div>
           </div>
-        </div>
-      </CardBody>
-    </Card>
+        </CardBody>
+      </Card>
+    </Link>
   );
 }
