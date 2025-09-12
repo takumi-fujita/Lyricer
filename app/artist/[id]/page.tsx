@@ -79,19 +79,19 @@ export default function ArtistPage({ params }: ArtistPageProps) {
 
   if (isLoading || spotifyLoading) {
     return (
-      <main className="min-h-screen bg-gradient-to-br from-background to-background-100">
+      <div className="min-h-screen bg-gradient-to-br from-background to-background-100">
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-center py-12">
             <Spinner size="lg" color="primary" />
           </div>
         </div>
-      </main>
+      </div>
     );
   }
 
   if (error || !artist) {
     return (
-      <main className="min-h-screen bg-gradient-to-br from-background to-background-100">
+      <div className="min-h-screen bg-gradient-to-br from-background to-background-100">
         <div className="container mx-auto px-4 py-8">
           <Card>
             <CardBody className="text-center py-12">
@@ -101,7 +101,7 @@ export default function ArtistPage({ params }: ArtistPageProps) {
             </CardBody>
           </Card>
         </div>
-      </main>
+      </div>
     );
   }
 
@@ -115,7 +115,7 @@ export default function ArtistPage({ params }: ArtistPageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-background to-background-100">
+    <div className="min-h-screen bg-gradient-to-br from-background to-background-100">
       <div className="container mx-auto px-4 py-8">
         {/* 戻るボタン */}
         <div className="mb-6">
@@ -123,7 +123,7 @@ export default function ArtistPage({ params }: ArtistPageProps) {
             variant="light"
             startContent={<ArrowLeftIcon className="w-4 h-4" />}
             onClick={() => window.history.back()}
-            className="text-default-500 hover:text-foreground"
+            className="text-default-500 hover:text-foreground p-0"
           >
             アーティスト一覧に戻る
           </Button>
@@ -132,7 +132,7 @@ export default function ArtistPage({ params }: ArtistPageProps) {
         {/* アーティスト情報ヘッダー */}
         <div className="mb-8">
           <div className="flex flex-col md:flex-row gap-6 items-start">
-            <div className="w-full md:w-64 h-64 flex-shrink-0">
+            <div className="w-full md:w-64 h-64 flex-shrink-0 flex justify-center">
               <Image
                 src={artist.image || "/placeholder-artist.svg"}
                 alt={artist.name}
@@ -175,6 +175,6 @@ export default function ArtistPage({ params }: ArtistPageProps) {
         {/* 曲一覧 */}
         <SongSearch artistId={resolvedParams.id} />
       </div>
-    </main>
+    </div>
   );
 }

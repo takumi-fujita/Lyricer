@@ -48,20 +48,14 @@ interface SpotifyTrack {
 }
 
 interface LyricsData {
-  lyrics: string;
-  syncType: string;
-  lines: Array<{
-    startTimeMs: string;
-    words: string;
-    part?: string; // パート情報を追加
-    color?: string; // カラー情報を追加
-    syllables: Array<{
-      startTimeMs: string;
-      endTimeMs: string;
-      content: string;
-    }>;
+  lyric: Array<{
+    part: string;
+    lyric: string;
+    color: string;
+    startTimeMs: number;
   }>;
 }
+
 
 interface TrackPageProps {
   params: Promise<{
@@ -78,8 +72,10 @@ export default function TrackPage({ params }: TrackPageProps) {
   const [currentPlayingTrack, setCurrentPlayingTrack] = useState<any>(null);
   const [currentPosition, setCurrentPosition] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showStickyControls, setShowStickyControls] = useState(false);
   const { accessToken, isLoading: spotifyLoading } = useSpotify();
   const spotifyPlayerRef = useRef<SpotifyPlayerRef>(null);
+  const lyricsRef = useRef<HTMLDivElement>(null);
   
   // React.use()でparamsを取得
   const resolvedParams = use(params);
@@ -168,9 +164,7 @@ export default function TrackPage({ params }: TrackPageProps) {
         } else {
           // 歌詞が見つからない場合は空の歌詞を設定
           const emptyLyrics: LyricsData = {
-            lyrics: "歌詞が見つかりませんでした",
-            syncType: "LINE_SYNCED",
-            lines: []
+            lyric: []
           };
           setLyrics(emptyLyrics);
         }
@@ -186,21 +180,67 @@ export default function TrackPage({ params }: TrackPageProps) {
     fetchTrackAndLyrics();
   }, [resolvedParams.trackId, accessToken, spotifyLoading]);
 
+  // スクロール位置を監視して固定コントロールの表示を制御
+  useEffect(() => {
+    const handleScroll = () => {
+      const controlsElement = document.getElementById('playback-controls');
+      if (controlsElement) {
+        const rect = controlsElement.getBoundingClientRect();
+        // コントロールが画面上部から見えなくなったら固定表示
+        setShowStickyControls(rect.bottom < 0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // 現在の歌詞行に自動スクロール
+  useEffect(() => {
+    if (!lyrics || !lyrics.lyric || currentPosition === 0) return;
+    
+    // 現在の歌詞インデックスを計算
+    let currentLyricIndex = -1;
+    for (let i = 0; i < lyrics.lyric.length; i++) {
+      const line = lyrics.lyric[i];
+      const startTimeMs = line.startTimeMs;
+      const nextStartTimeMs = i < lyrics.lyric.length - 1 
+        ? lyrics.lyric[i + 1].startTimeMs 
+        : Infinity;
+      
+      if (currentPosition >= startTimeMs && currentPosition < nextStartTimeMs) {
+        currentLyricIndex = i;
+        break;
+      }
+    }
+    
+    if (currentLyricIndex >= 0 && lyricsRef.current) {
+      const lyricElement = lyricsRef.current.children[currentLyricIndex] as HTMLElement;
+      if (lyricElement) {
+        lyricElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+      }
+    }
+  }, [currentPosition, lyrics]);
+
+
   if (isLoading || spotifyLoading) {
     return (
-      <main className="min-h-screen bg-gradient-to-br from-background to-background-100">
+      <div className="min-h-screen bg-gradient-to-br from-background to-background-100">
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-center py-12">
             <Spinner size="lg" color="primary" />
           </div>
         </div>
-      </main>
+      </div>
     );
   }
 
   if (error || !track) {
     return (
-      <main className="min-h-screen bg-gradient-to-br from-background to-background-100">
+      <div className="min-h-screen bg-gradient-to-br from-background to-background-100">
         <div className="container mx-auto px-4 py-8">
           <Card>
             <CardBody className="text-center py-12">
@@ -210,7 +250,7 @@ export default function TrackPage({ params }: TrackPageProps) {
             </CardBody>
           </Card>
         </div>
-      </main>
+      </div>
     );
   }
 
@@ -257,23 +297,42 @@ export default function TrackPage({ params }: TrackPageProps) {
     setIsPlaying(playing);
   };
 
-  // 歌詞のハイライト表示を判定
+  // 歌詞のハイライト表示を判定（時間ベース）
   const getCurrentLyricIndex = () => {
-    if (!lyrics || !currentPlayingTrack) return -1;
-    
-    // 現在再生中の楽曲が表示中の楽曲と一致するかチェック
-    if (currentPlayingTrack.id !== resolvedParams.trackId) return -1;
+    if (!lyrics || !lyrics.lyric || currentPosition === 0) return -1;
     
     // 現在の再生位置に基づいて歌詞のインデックスを計算
-    // 仮の時間計算（実際の歌詞データにstartTimeMsがあればそれを使用）
     const currentTimeMs = currentPosition;
-    const lyricIndex = Math.floor(currentTimeMs / 2000); // 2秒間隔で仮定
     
-    return lyricIndex >= 0 && lyricIndex < lyrics.lines.length ? lyricIndex : -1;
+    // デバッグ情報を出力
+    console.log("Current time:", currentTimeMs, "ms");
+    
+    // 歌詞データから現在の時間に該当する歌詞を検索
+    for (let i = 0; i < lyrics.lyric.length; i++) {
+      const line = lyrics.lyric[i];
+      const startTimeMs = line.startTimeMs;
+      const nextStartTimeMs = i < lyrics.lyric.length - 1 
+        ? lyrics.lyric[i + 1].startTimeMs 
+        : Infinity;
+      
+      // デバッグ情報を出力
+      if (i < 5) { // 最初の5行のみログ出力
+        console.log(`Line ${i}: ${line.lyric.substring(0, 20)}... (${startTimeMs}ms - ${nextStartTimeMs}ms)`);
+      }
+      
+      // 現在の時間がこの歌詞の時間範囲内にあるかチェック
+      if (currentTimeMs >= startTimeMs && currentTimeMs < nextStartTimeMs) {
+        console.log(`Found matching lyric at index ${i}: ${line.lyric}`);
+        return i;
+      }
+    }
+    
+    console.log("No matching lyric found");
+    return -1;
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-background to-background-100">
+    <div className="min-h-screen bg-gradient-to-br from-background to-background-100">
       <div className="container mx-auto px-4 py-8">
         {/* 戻るボタン */}
         <div className="mb-6">
@@ -281,9 +340,9 @@ export default function TrackPage({ params }: TrackPageProps) {
             variant="light"
             startContent={<ArrowLeftIcon className="w-4 h-4" />}
             onClick={() => window.history.back()}
-            className="text-default-500 hover:text-foreground"
+            className="text-default-500 hover:text-foreground p-0"
           >
-            アーティスト一覧に戻る
+            楽曲一覧に戻る
           </Button>
         </div>
 
@@ -335,7 +394,7 @@ export default function TrackPage({ params }: TrackPageProps) {
                   ))}
                 </div>
               </div>
-              <div className="flex items-center gap-4 mb-4">
+              <div id="playback-controls" className="flex items-center gap-4 mb-4">
                 <Button
                   color="primary"
                   variant="solid"
@@ -359,6 +418,46 @@ export default function TrackPage({ params }: TrackPageProps) {
           </div>
         </div>
 
+        {/* 固定再生コントロール（スクロール時に表示） */}
+        {showStickyControls && (
+          <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+            <div className="bg-background/95 backdrop-blur-sm border border-default-200 rounded-lg p-4 shadow-lg">
+              <div className="flex flex-col items-center gap-3">
+                <div className="flex items-center justify-center gap-4">
+                  <Button
+                    color="primary"
+                    variant="solid"
+                    size="lg"
+                    startContent={isPlaying ? <PauseIcon className="w-5 h-5" /> : <PlayIcon className="w-5 h-5" />}
+                    onPress={handlePlay}
+                  >
+                    {isPlaying ? "一時停止" : "再生"}
+                  </Button>
+                  <Button
+                    color="default"
+                    variant="bordered"
+                    size="lg"
+                    startContent={<StopIcon className="w-5 h-5" />}
+                    onPress={handleStop}
+                  >
+                    停止
+                  </Button>
+                </div>
+                {(isPlaying || currentPosition > 0) && (
+                  <div className="text-sm text-default-500">
+                    現在位置: {Math.floor(currentPosition / 1000)}秒
+                    {getCurrentLyricIndex() >= 0 && (
+                      <span className="ml-2 text-primary">
+                        (歌詞 {getCurrentLyricIndex() + 1}行目)
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Spotify Player */}
         {accessToken && (
           <div className="mb-8">
@@ -375,11 +474,23 @@ export default function TrackPage({ params }: TrackPageProps) {
 
         {/* 歌詞表示 */}
         <Card>
-          <CardBody className="p-8">
-            <h2 className="text-2xl font-bold text-foreground mb-6">歌詞</h2>
-            {lyrics ? (
-              <div className="space-y-4">
-                {lyrics.lines.map((line, index) => {
+          <CardBody className="p-2 md:p-8">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold text-foreground">歌詞</h2>
+              {(isPlaying || currentPosition > 0) && (
+                <div className="text-sm text-default-500">
+                  現在位置: {Math.floor(currentPosition / 1000)}秒
+                  {getCurrentLyricIndex() >= 0 && (
+                    <span className="ml-2 text-primary">
+                      (歌詞 {getCurrentLyricIndex() + 1}行目)
+                    </span>
+                  )}
+                </div>
+              )}
+            </div>
+            {lyrics && lyrics.lyric && lyrics.lyric.length > 0 ? (
+              <div ref={lyricsRef} className="space-y-4">
+                {lyrics.lyric.map((line, index) => {
                   const isCurrentLyric = getCurrentLyricIndex() === index;
                   return (
                     <div 
@@ -404,7 +515,7 @@ export default function TrackPage({ params }: TrackPageProps) {
                           ? 'text-primary font-semibold text-lg' 
                           : 'text-foreground-700'
                       }`}>
-                        {line.words}
+                        {line.lyric}
                       </div>
                     </div>
                   );
@@ -412,12 +523,14 @@ export default function TrackPage({ params }: TrackPageProps) {
               </div>
             ) : (
               <div className="text-center py-12">
-                <p className="text-default-500">歌詞を読み込み中...</p>
+                <p className="text-default-500">
+                  {lyrics ? "歌詞が見つかりませんでした" : "歌詞を読み込み中..."}
+                </p>
               </div>
             )}
           </CardBody>
         </Card>
       </div>
-    </main>
+    </div>
   );
 }

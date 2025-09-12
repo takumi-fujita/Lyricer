@@ -3,127 +3,146 @@
     {
       "part": "JUNON",
       "lyric": "ねぇ 言いかけた昨日のごめんも",
-      "color": "text-blue-600"
+      "color": "text-blue-600",
+      "startTimeMs": 10000
     },
     {
       "part": "LEO",
       "lyric": "頼り甲斐のない相槌も裏側で泣いてる I love you",
-      "color": "text-green-600"
+      "color": "text-green-600",
+      "startTimeMs": 16000
     },
     {
       "part": "SOTA",
       "lyric": "気にしてないって嘘はつけたけどたまに胸騒ぐのもわかってよ",
-      "color": "text-purple-600"
+      "color": "text-purple-600",
+      "startTimeMs": 22000
     },
     {
       "part": "MANATO",
       "lyric": "好きが募ってローラーコースター回って揺れて落ちて君に届くかな",
-      "color": "text-orange-600"
+      "color": "text-orange-600",
+      "startTimeMs": 28000
     },
     {
       "part": "RYUHEI",
       "lyric": "今夜の恋模様流れる星うららかな言葉のつづきを贈るよ",
-      "color": "text-pink-600"
-    },
-    {
-      "part": "JUNON",
-      "lyric": "Hey, look at me baby",
-      "color": "text-blue-600"
+      "color": "text-pink-600",
+      "startTimeMs": 34000
     },
     {
       "part": "SHUNTO",
       "lyric": "君に夢中 I say, I love you 僕の瞳にずっといて",
-      "color": "text-yellow-600"
+      "color": "text-yellow-600",
+      "startTimeMs": 44000
     },
     {
       "part": "RYOKI",
       "lyric": "来世でも 前世でも ずっと会いたくて",
-      "color": "text-red-600"
+      "color": "text-red-600",
+      "startTimeMs": 49000
     },
     {
       "part": "MANATO",
       "lyric": "君に夢中 四六時中 ちゃんと言うから ねぇ聞いて",
-      "color": "text-orange-600"
+      "color": "text-orange-600",
+      "startTimeMs": 56000
     },
     {
       "part": "JUNON",
       "lyric": "何回でも 何万回でも 名前を呼ぶよ",
-      "color": "text-blue-600"
+      "color": "text-blue-600",
+      "startTimeMs": 61000
     },
     {
       "part": "MANATO",
       "lyric": "Will you stay with me forever？",
-      "color": "text-orange-600"
+      "color": "text-orange-600",
+      "startTimeMs": 69000
     },
     {
       "part": "SHUNTO",
       "lyric": "月夜照らされる横顔 見惚れる時間がもっと欲しいよ",
-      "color": "text-yellow-600"
+      "color": "text-yellow-600",
+      "startTimeMs": 79000
     },
     {
       "part": "RYOKI",
       "lyric": "心に君映るたび Make me hot 正直になれずにずっと Torn in love",
-      "color": "text-red-600"
+      "color": "text-red-600",
+      "startTimeMs": 85000
     },
     {
       "part": "SOTA",
       "lyric": "ただいまとおかえり 幸せ跳ね返し 傍らにさりげなく咲いた 恋の花",
-      "color": "text-purple-600"
+      "color": "text-purple-600",
+      "startTimeMs": 91000
     },
     {
       "part": "MANATO",
       "lyric": "ずっと一緒 言葉はいらないよ 心のもっと奥で覚えてるから",
-      "color": "text-orange-600"
+      "color": "text-orange-600",
+      "startTimeMs": 96000
     },
     {
       "part": "LEO",
       "lyric": "君に夢中 I say, I love you 僕の瞳にずっといて",
-      "color": "text-green-600"
+      "color": "text-green-600",
+      "startTimeMs": 101000
     },
     {
       "part": "RYUHEI",
       "lyric": "来世でも 前世でも ずっと会いたくて",
-      "color": "text-pink-600"
+      "color": "text-pink-600",
+      "startTimeMs": 107000
     },
     {
       "part": "SOTA",
       "lyric": "君に夢中 四六時中 ちゃんと言うから ねぇ聞いて",
-      "color": "text-purple-600"
+      "color": "text-purple-600",
+      "startTimeMs": 112000
     },
     {
       "part": "JUNON",
       "lyric": "何回でも 何万回でも 名前を呼ぶよ",
-      "color": "text-blue-600"
+      "color": "text-blue-600",
+      "startTimeMs": 118000
     },
     {
       "part": "RYOKI",
       "lyric": "Please その涙と一緒に 溢れ落ちそうな祈り すぐ拭いに行くから 僕を呼んで 抱きしめるずっと ひとり泣かないよう",
-      "color": "text-red-600"
+      "color": "text-red-600",
+      "startTimeMs": 136000
     },
     {
       "part": "JUNON",
       "lyric": "君に夢中 I say, I love you 僕の瞳にずっといて",
-      "color": "text-blue-600"
+      "color": "text-blue-600",
+      "startTimeMs": 147000
     },
     {
       "part": "SHUNTO",
       "lyric": "来世でも 前世でも ずっと会いたくて",
-      "color": "text-yellow-600"
+      "color": "text-yellow-600",
+      "startTimeMs": 153000
     },
     {
       "part": "RYUHEI",
       "lyric": "君に夢中 四六時中 ちゃんと言うから ねぇ聞いて",
-      "color": "text-pink-600"
+      "color": "text-pink-600",
+      "startTimeMs": 159000
     },
     {
       "part": "LEO",
       "lyric": "何回でも 何万回でも 名前を呼ぶよ",
-      "color": "text-green-600"
+      "color": "text-green-600",
+      "startTimeMs": 165000
     },
     {
       "part": "MANATO",
       "lyric": "Will you stay with me forever？",
-      "color": "text-orange-600"
+      "color": "text-orange-600",
+      "startTimeMs": 172000
     }
   ]
 }

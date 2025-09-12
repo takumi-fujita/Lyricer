@@ -49,7 +49,6 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
   useEffect(() => {
     // グローバル関数を先に定義（スクリプト読み込み前に）
     (window as any).onSpotifyWebPlaybackSDKReady = () => {
-      console.log("Spotify Web Playback SDK ready");
       initializePlayer();
     };
 
@@ -61,7 +60,6 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
       
       // スクリプトの読み込み完了を待つ
       script.onload = () => {
-        console.log("Spotify SDK script loaded");
       };
       
       script.onerror = () => {
@@ -85,7 +83,6 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
   // currentTrackUriが変更された時の処理（楽曲の自動ロードは無効）
   useEffect(() => {
     if (currentTrackUri && isReady && deviceId) {
-      console.log("Track URI set, ready for playback:", currentTrackUri);
       // 楽曲の自動ロードは無効
       // ユーザーが再生ボタンを押した時にplay()メソッドで楽曲をロードして再生
     }
@@ -159,7 +156,6 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
 
     // 準備完了
     newPlayer.addListener("ready", ({ device_id }: { device_id: string }) => {
-      console.log("Spotify Player準備完了, Device ID:", device_id);
       setDeviceId(device_id);
       setIsReady(true);
       setError(null);
@@ -167,7 +163,6 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
 
     // 接続状態の更新
     newPlayer.addListener("not_ready", ({ device_id }: { device_id: string }) => {
-      console.log("デバイスが利用できなくなりました:", device_id);
       setIsReady(false);
     });
 
@@ -208,23 +203,17 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
   }, [player, isPlaying, onPositionUpdate]);
 
   // 再生制御メソッド
-  const play = () => {
-    console.log("Play method called", { player: !!player, currentTrack: !!currentTrack, currentTrackUri, deviceId: !!deviceId });
-    
+  const play = () => {    
     if (!isReady || !deviceId) {
       console.error("Player not ready or device ID not available");
       return;
     }
 
     if (player && currentTrack) {
-      console.log("Toggling play for loaded track");
       player.togglePlay();
     } else if (currentTrackUri) {
-      console.log("Loading and playing track:", currentTrackUri);
       // 楽曲がロードされていない場合は、楽曲をロードして再生
       loadAndPlayTrack(currentTrackUri);
-    } else {
-      console.log("No track URI available for playback");
     }
   };
 
@@ -260,7 +249,6 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
 
     try {
       setIsLoading(true);
-      console.log("Sending play request with device ID:", deviceId);
       const response = await fetch("/api/spotify/play", {
         method: "PUT",
         headers: {
@@ -274,7 +262,6 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
       });
 
       if (response.ok) {
-        console.log("Track loaded and playback started");
         // 少し待ってから再生状態を確認
         setTimeout(() => {
           if (player) {
@@ -331,9 +318,7 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
         }),
       });
 
-      if (response.ok) {
-        console.log("Track playback started");
-      } else {
+      if (!response.ok) {
         const errorData = await response.json();
         console.error("Playback error:", errorData);
         setError(`再生エラー: ${errorData.error}`);

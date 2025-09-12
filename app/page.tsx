@@ -33,7 +33,7 @@ export default function Home() {
   }, [searchParams]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-background to-background-100">
+    <div className="min-h-screen bg-gradient-to-br from-background to-background-100">
       <div className="container mx-auto px-4 py-8">
         <section className="flex flex-col items-center justify-center gap-8 py-12">
           {/* メインタイトル */}
@@ -153,6 +153,6 @@ export default function Home() {
           )}
         </section>
       </div>
-    </main>
+    </div>
   );
 }
