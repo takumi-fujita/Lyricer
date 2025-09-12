@@ -183,6 +183,30 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
     }
   }, [isPlaying, onPlaybackStateChange]);
 
+  // 再生位置を定期的に更新（プログレスバーの同期のため）
+  useEffect(() => {
+    if (!player || !isPlaying) return;
+
+    const interval = setInterval(async () => {
+      try {
+        const state = await player.getCurrentState();
+        if (state) {
+          setPosition(state.position);
+          setDuration(state.duration);
+          
+          // 親コンポーネントに再生位置を通知
+          if (onPositionUpdate) {
+            onPositionUpdate(state.position);
+          }
+        }
+      } catch (error) {
+        console.error("Error getting current state:", error);
+      }
+    }, 500); // 0.5秒間隔で更新（より滑らかな表示）
+
+    return () => clearInterval(interval);
+  }, [player, isPlaying, onPositionUpdate]);
+
   // 再生制御メソッド
   const play = () => {
     console.log("Play method called", { player: !!player, currentTrack: !!currentTrack, currentTrackUri, deviceId: !!deviceId });
@@ -390,7 +414,7 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
               </div>
               <div className="w-full bg-default-200 rounded-full h-2">
                 <div
-                  className="bg-primary h-2 rounded-full transition-all duration-300"
+                  className="bg-primary h-2 rounded-full transition-all duration-200 ease-out"
                   style={{ width: `${duration > 0 ? (position / duration) * 100 : 0}%` }}
                 />
               </div>
