@@ -53,6 +53,7 @@ interface LyricsData {
     startTimeMs: string;
     words: string;
     part?: string; // パート情報を追加
+    color?: string; // カラー情報を追加
     syllables: Array<{
       startTimeMs: string;
       endTimeMs: string;
@@ -307,8 +308,8 @@ export default function TrackPage({ params }: TrackPageProps) {
                   <div key={index} className="flex items-start gap-4">
                     {line.part && (
                       <div className="flex-shrink-0">
-                        <span className="inline-block px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full">
-                          {line.part}
+                        <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary">
+                          <span className={line.color || 'text-primary'}>{line.part}</span>
                         </span>
                       </div>
                     )}

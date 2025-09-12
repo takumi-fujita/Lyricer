@@ -25,23 +25,24 @@ export async function GET(
       const fileContent = await readFile(lyricFilePath, "utf-8");
       const lyricData = JSON.parse(fileContent);
 
-      // 歌詞データを整形
-      const formattedLyrics = {
-        lyrics: lyricData.lyric.map((line: any) => line.lyric).join("\n"),
-        syncType: "LINE_SYNCED",
-        lines: lyricData.lyric.map((line: any, index: number) => ({
-          startTimeMs: (index * 2000).toString(), // 仮の時間（2秒間隔）
-          words: line.lyric,
-          part: line.part, // パート情報を追加
-          syllables: []
-        })),
-        metadata: {
-          trackId: trackId,
-          artistId: artistId,
-          language: "ja",
-          source: "local_json"
-        }
-      };
+                  // 歌詞データを整形
+                  const formattedLyrics = {
+                    lyrics: lyricData.lyric.map((line: any) => line.lyric).join("\n"),
+                    syncType: "LINE_SYNCED",
+                    lines: lyricData.lyric.map((line: any, index: number) => ({
+                      startTimeMs: (index * 2000).toString(), // 仮の時間（2秒間隔）
+                      words: line.lyric,
+                      part: line.part, // パート情報を追加
+                      color: line.color, // カラー情報を追加
+                      syllables: []
+                    })),
+                    metadata: {
+                      trackId: trackId,
+                      artistId: artistId,
+                      language: "ja",
+                      source: "local_json"
+                    }
+                  };
 
       return NextResponse.json(formattedLyrics);
 
