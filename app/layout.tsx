@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang="ja">
       <head />
       <body
         className={clsx(
@@ -46,7 +46,7 @@ export default function RootLayout({
           <SpotifyProvider>
             <div className="relative flex flex-col h-screen">
               <Navbar />
-              <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+              <main className="container mx-auto max-w-7xl px-6 flex-grow">
                 {children}
               </main>
               <footer className="w-full flex items-center justify-center py-3">
