@@ -1,14 +1,14 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, use, useRef } from "react";
 import { notFound } from "next/navigation";
 import { Card, CardBody } from "@heroui/card";
 import { Spinner } from "@heroui/spinner";
 import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
-import { ArrowLeftIcon, PlayIcon } from "../../../../../components/icons";
+import { ArrowLeftIcon, PlayIcon, PauseIcon, StopIcon } from "../../../../../components/icons";
 import { useSpotify } from "@/contexts/spotify-context";
-import SpotifyPlayer from "../../../../../components/spotify-player";
+import SpotifyPlayer, { SpotifyPlayerRef } from "../../../../../components/spotify-player";
 
 interface SpotifyTrack {
   id: string;
@@ -77,7 +77,9 @@ export default function TrackPage({ params }: TrackPageProps) {
   const [error, setError] = useState<string | null>(null);
   const [currentPlayingTrack, setCurrentPlayingTrack] = useState<any>(null);
   const [currentPosition, setCurrentPosition] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
   const { accessToken, isLoading: spotifyLoading } = useSpotify();
+  const spotifyPlayerRef = useRef<SpotifyPlayerRef>(null);
   
   // React.use()でparamsを取得
   const resolvedParams = use(params);
@@ -219,8 +221,25 @@ export default function TrackPage({ params }: TrackPageProps) {
   };
 
   const handlePlay = () => {
-    // Lyricer Playerで再生（currentTrackUriが設定されることで自動再生される）
-    console.log("Playing track in Lyricer Player:", track.id);
+    if (spotifyPlayerRef.current) {
+      if (isPlaying) {
+        spotifyPlayerRef.current.pause();
+      } else {
+        // 楽曲がロードされていない場合は、currentTrackUriを設定して楽曲をロード
+        if (!isPlaying && track) {
+          // 楽曲をロードして再生
+          spotifyPlayerRef.current.play();
+        }
+      }
+    }
+  };
+
+  const handleStop = () => {
+    if (spotifyPlayerRef.current) {
+      spotifyPlayerRef.current.stop();
+      setIsPlaying(false);
+      setCurrentPosition(0);
+    }
   };
 
   // 現在再生中の楽曲が変更された時の処理
@@ -231,6 +250,11 @@ export default function TrackPage({ params }: TrackPageProps) {
   // 現在の再生位置を更新
   const handlePositionUpdate = (position: number) => {
     setCurrentPosition(position);
+  };
+
+  // 再生状態を更新
+  const handlePlaybackStateChange = (playing: boolean) => {
+    setIsPlaying(playing);
   };
 
   // 歌詞のハイライト表示を判定
@@ -316,10 +340,19 @@ export default function TrackPage({ params }: TrackPageProps) {
                   color="primary"
                   variant="solid"
                   size="lg"
-                  startContent={<PlayIcon className="w-5 h-5" />}
-                  onClick={handlePlay}
+                  startContent={isPlaying ? <PauseIcon className="w-5 h-5" /> : <PlayIcon className="w-5 h-5" />}
+                  onPress={handlePlay}
                 >
-                  Spotifyで聴く
+                  {isPlaying ? "一時停止" : "再生"}
+                </Button>
+                <Button
+                  color="default"
+                  variant="bordered"
+                  size="lg"
+                  startContent={<StopIcon className="w-5 h-5" />}
+                  onPress={handleStop}
+                >
+                  停止
                 </Button>
               </div>
             </div>
@@ -330,9 +363,11 @@ export default function TrackPage({ params }: TrackPageProps) {
         {accessToken && (
           <div className="mb-8">
             <SpotifyPlayer 
+              ref={spotifyPlayerRef}
               accessToken={accessToken} 
               onTrackChange={handleTrackChange}
               onPositionUpdate={handlePositionUpdate}
+              onPlaybackStateChange={handlePlaybackStateChange}
               currentTrackUri={track ? `spotify:track:${track.id}` : undefined}
             />
           </div>

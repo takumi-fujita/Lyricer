@@ -1,15 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useImperativeHandle, forwardRef } from "react";
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
 import { Spinner } from "@heroui/spinner";
-import { PlayIcon, PauseIcon, SkipNextIcon, SkipPreviousIcon } from "./icons";
 
 interface SpotifyPlayerProps {
   accessToken: string;
   onTrackChange?: (track: any) => void;
   onPositionUpdate?: (position: number) => void;
+  onPlaybackStateChange?: (playing: boolean) => void;
   currentTrackUri?: string; // 再生したい楽曲のURI
 }
 
@@ -27,7 +27,13 @@ interface Track {
   };
 }
 
-export default function SpotifyPlayer({ accessToken, onTrackChange, onPositionUpdate, currentTrackUri }: SpotifyPlayerProps) {
+export interface SpotifyPlayerRef {
+  play: () => void;
+  pause: () => void;
+  stop: () => void;
+}
+
+const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ accessToken, onTrackChange, onPositionUpdate, onPlaybackStateChange, currentTrackUri }, ref) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null);
   const [position, setPosition] = useState(0);
@@ -76,11 +82,12 @@ export default function SpotifyPlayer({ accessToken, onTrackChange, onPositionUp
     };
   }, [accessToken]);
 
-  // currentTrackUriが変更された時に楽曲を再生
+  // currentTrackUriが変更された時の処理（楽曲の自動ロードは無効）
   useEffect(() => {
     if (currentTrackUri && isReady && deviceId) {
-      console.log("Playing track:", currentTrackUri);
-      playTrack(currentTrackUri);
+      console.log("Track URI set, ready for playback:", currentTrackUri);
+      // 楽曲の自動ロードは無効
+      // ユーザーが再生ボタンを押した時にplay()メソッドで楽曲をロードして再生
     }
   }, [currentTrackUri, isReady, deviceId]);
 
@@ -169,21 +176,113 @@ export default function SpotifyPlayer({ accessToken, onTrackChange, onPositionUp
     setPlayer(newPlayer);
   };
 
-  const togglePlay = () => {
-    if (player) {
+  // 再生状態が変更された時にコールバックを呼び出す
+  useEffect(() => {
+    if (onPlaybackStateChange) {
+      onPlaybackStateChange(isPlaying);
+    }
+  }, [isPlaying, onPlaybackStateChange]);
+
+  // 再生制御メソッド
+  const play = () => {
+    console.log("Play method called", { player: !!player, currentTrack: !!currentTrack, currentTrackUri, deviceId: !!deviceId });
+    
+    if (!isReady || !deviceId) {
+      console.error("Player not ready or device ID not available");
+      return;
+    }
+
+    if (player && currentTrack) {
+      console.log("Toggling play for loaded track");
+      player.togglePlay();
+    } else if (currentTrackUri) {
+      console.log("Loading and playing track:", currentTrackUri);
+      // 楽曲がロードされていない場合は、楽曲をロードして再生
+      loadAndPlayTrack(currentTrackUri);
+    } else {
+      console.log("No track URI available for playback");
+    }
+  };
+
+  const pause = () => {
+    if (player && currentTrack) {
       player.togglePlay();
     }
   };
 
-  const skipNext = () => {
+  const stop = () => {
     if (player) {
-      player.nextTrack();
+      player.pause();
+      setCurrentTrack(null);
+      setIsPlaying(false);
+      setPosition(0);
+      // 位置を0にリセット（Spotify Web Playback SDKでは直接サポートされていないため、代替手段が必要）
     }
   };
 
-  const skipPrevious = () => {
-    if (player) {
-      player.previousTrack();
+  // 親コンポーネントから呼び出せるメソッドを公開
+  useImperativeHandle(ref, () => ({
+    play,
+    pause,
+    stop
+  }), [player, currentTrack, currentTrackUri, deviceId]);
+
+  const loadAndPlayTrack = async (trackUri: string) => {
+    if (!deviceId) {
+      console.error("Device ID not available in loadAndPlayTrack");
+      return;
+    }
+
+    try {
+      setIsLoading(true);
+      console.log("Sending play request with device ID:", deviceId);
+      const response = await fetch("/api/spotify/play", {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          trackUri: trackUri,
+          deviceId: deviceId,
+        }),
+      });
+
+      if (response.ok) {
+        console.log("Track loaded and playback started");
+        // 少し待ってから再生状態を確認
+        setTimeout(() => {
+          if (player) {
+            player.getCurrentState().then((state: any) => {
+              if (state) {
+                setIsPlaying(!state.paused);
+                setPosition(state.position);
+                setDuration(state.duration);
+                if (state.track_window?.current_track) {
+                  const track = state.track_window.current_track;
+                  setCurrentTrack({
+                    id: track.id,
+                    name: track.name,
+                    artists: track.artists,
+                    album: track.album,
+                    duration_ms: track.duration_ms,
+                    external_urls: track.external_urls,
+                  });
+                }
+              }
+            });
+          }
+        }, 1000);
+      } else {
+        const errorData = await response.json();
+        console.error("Playback error:", errorData);
+        setError(`再生エラー: ${errorData.error}`);
+      }
+    } catch (error) {
+      console.error("Playback request error:", error);
+      setError("楽曲の再生に失敗しました");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -296,39 +395,6 @@ export default function SpotifyPlayer({ accessToken, onTrackChange, onPositionUp
               </div>
             </div>
 
-            {/* コントロールボタン */}
-            <div className="flex items-center justify-center gap-4">
-              <Button
-                isIconOnly
-                variant="light"
-                onClick={skipPrevious}
-                disabled={!isReady}
-              >
-                <SkipPreviousIcon className="w-5 h-5" />
-              </Button>
-              <Button
-                isIconOnly
-                color="primary"
-                variant="solid"
-                onClick={togglePlay}
-                disabled={!isReady}
-                className="w-12 h-12"
-              >
-                {isPlaying ? (
-                  <PauseIcon className="w-6 h-6" />
-                ) : (
-                  <PlayIcon className="w-6 h-6" />
-                )}
-              </Button>
-              <Button
-                isIconOnly
-                variant="light"
-                onClick={skipNext}
-                disabled={!isReady}
-              >
-                <SkipNextIcon className="w-5 h-5" />
-              </Button>
-            </div>
           </div>
         ) : (
           <div className="text-center py-8">
@@ -341,7 +407,11 @@ export default function SpotifyPlayer({ accessToken, onTrackChange, onPositionUp
       </CardBody>
     </Card>
   );
-}
+});
+
+SpotifyPlayer.displayName = "SpotifyPlayer";
+
+export default SpotifyPlayer;
 
 // Spotify Web Playback SDKの型定義
 declare global {
