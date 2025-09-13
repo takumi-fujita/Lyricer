@@ -44,7 +44,7 @@ export default function ArtistPage({ params }: ArtistPageProps) {
       if (spotifyLoading) return;
       
       if (!accessToken) {
-        setError("Spotifyとの連携が必要です");
+        setError("Spotifyとの連携が必要です<br/>ホーム画面から再連携し直してください。");
         setIsLoading(false);
         return;
       }
@@ -122,7 +122,7 @@ export default function ArtistPage({ params }: ArtistPageProps) {
           <Button
             variant="light"
             startContent={<ArrowLeftIcon className="w-4 h-4" />}
-            onClick={() => window.history.back()}
+            onPress={() => window.history.back()}
             className="text-default-500 hover:text-foreground p-0"
           >
             アーティスト一覧に戻る

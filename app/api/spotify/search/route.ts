@@ -37,7 +37,7 @@ export async function GET(request: NextRequest) {
     if (!spotifyResponse.ok) {
       const errorData = await spotifyResponse.json();
       return NextResponse.json(
-        { error: "Spotify API エラー", details: errorData },
+        { error: "Spotify連携エラー<br/>ホーム画面から再連携し直してください。", details: errorData },
         { status: spotifyResponse.status }
       );
     }

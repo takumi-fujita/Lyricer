@@ -124,7 +124,7 @@ export default function Home() {
                     variant: "bordered",
                     size: "lg"
                   })}
-                  onClick={disconnect}
+                  onPress={disconnect}
                 >
                   連携を解除
                 </Button>
@@ -140,7 +140,7 @@ export default function Home() {
                   variant: "shadow",
                   size: "lg"
                 })}
-                onClick={connect}
+                onPress={connect}
                 startContent={<span className="text-xl">🎵</span>}
               >
                 Spotifyで始める

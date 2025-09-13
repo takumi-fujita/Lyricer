@@ -49,10 +49,16 @@ interface SpotifyTrack {
 
 interface LyricsData {
   lyric: Array<{
-    part: string;
+    part: string | string[];
     lyric: string;
-    color: string;
     startTimeMs: number;
+  }>;
+}
+
+interface ColorData {
+  color: Array<{
+    part: string;
+    color: string;
   }>;
 }
 
@@ -67,6 +73,7 @@ interface TrackPageProps {
 export default function TrackPage({ params }: TrackPageProps) {
   const [track, setTrack] = useState<SpotifyTrack | null>(null);
   const [lyrics, setLyrics] = useState<LyricsData | null>(null);
+  const [colors, setColors] = useState<ColorData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [currentPlayingTrack, setCurrentPlayingTrack] = useState<any>(null);
@@ -86,7 +93,7 @@ export default function TrackPage({ params }: TrackPageProps) {
       if (spotifyLoading) return;
       
       if (!accessToken) {
-        setError("Spotifyとの連携が必要です");
+        setError("Spotifyとの連携が必要です<br/>ホーム画面から再連携し直してください。");
         setIsLoading(false);
         return;
       }
@@ -169,6 +176,24 @@ export default function TrackPage({ params }: TrackPageProps) {
           setLyrics(emptyLyrics);
         }
 
+        // 色設定を取得
+        const colorsResponse = await fetch(`/api/artist/${resolvedParams.id}/color`, {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        });
+
+        if (colorsResponse.ok) {
+          const colorsData = await colorsResponse.json();
+          setColors(colorsData);
+        } else {
+          // 色設定が見つからない場合は空の配列を設定
+          const defaultColors: ColorData = {
+            color: []
+          };
+          setColors(defaultColors);
+        }
+
       } catch (err) {
         console.error("楽曲・歌詞取得エラー:", err);
         setError(err instanceof Error ? err.message : "楽曲・歌詞情報の取得中にエラーが発生しました");
@@ -244,9 +269,10 @@ export default function TrackPage({ params }: TrackPageProps) {
         <div className="container mx-auto px-4 py-8">
           <Card>
             <CardBody className="text-center py-12">
-              <h3 className="text-lg font-semibold text-danger mb-2">
-                {error || "楽曲が見つかりませんでした"}
-              </h3>
+              <h3 
+                className="text-lg font-semibold text-danger mb-2"
+                dangerouslySetInnerHTML={{ __html: error || "楽曲が見つかりませんでした" }}
+              />
             </CardBody>
           </Card>
         </div>
@@ -295,6 +321,15 @@ export default function TrackPage({ params }: TrackPageProps) {
   // 再生状態を更新
   const handlePlaybackStateChange = (playing: boolean) => {
     setIsPlaying(playing);
+  };
+
+  // パート名から色を取得する関数
+  const getPartColor = (partName: string) => {
+    if (!colors || !colors.color) {
+      return 'text-primary'; // デフォルト色
+    }
+    const colorItem = colors.color.find(item => item.part === partName);
+    return colorItem ? colorItem.color : 'text-primary';
   };
 
   // 歌詞のハイライト表示を判定（時間ベース）
@@ -503,11 +538,26 @@ export default function TrackPage({ params }: TrackPageProps) {
                     >
                       {line.part && (
                         <div className="flex-shrink-0">
-                          <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary ${
-                            isCurrentLyric ? 'ring-2 ring-primary ring-offset-2' : ''
-                          }`}>
-                            <span className={line.color || 'text-primary'}>{line.part}</span>
-                          </span>
+                          <div className="flex flex-wrap gap-1">
+                            {Array.isArray(line.part) ? (
+                              line.part.map((partName, partIndex) => (
+                                <span 
+                                  key={partIndex}
+                                  className={`inline-block px-2 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary ${
+                                    isCurrentLyric ? 'ring-2 ring-primary ring-offset-2' : ''
+                                  }`}
+                                >
+                                  <span className={getPartColor(partName)}>{partName}</span>
+                                </span>
+                              ))
+                            ) : (
+                              <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary ${
+                                isCurrentLyric ? 'ring-2 ring-primary ring-offset-2' : ''
+                              }`}>
+                                <span className={getPartColor(line.part)}>{line.part}</span>
+                              </span>
+                            )}
+                          </div>
                         </div>
                       )}
                       <div className={`flex-1 leading-relaxed transition-all duration-300 ${

@@ -345,7 +345,7 @@ const SpotifyPlayer = forwardRef<SpotifyPlayerRef, SpotifyPlayerProps>(({ access
           <Button
             color="primary"
             variant="solid"
-            onClick={() => window.location.reload()}
+            onPress={() => window.location.reload()}
             className="mt-4"
           >
             再読み込み

@@ -5,9 +5,9 @@ import { Input } from "@heroui/input";
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
 import { Spinner } from "@heroui/spinner";
-import { Badge } from "@heroui/badge";
 import { SearchIcon, MusicIcon } from "./icons";
 import ArtistCard from "../components/artist-card";
+import Link from "next/link";
 import { useSpotify } from "@/contexts/spotify-context";
 
 interface SpotifyArtist {
@@ -147,6 +147,10 @@ export default function ArtistSearch() {
             </h3>
             <p className="text-default-500">
               アーティスト検索を使用するには、ホーム画面でSpotifyと連携してください。
+              <br />
+              <Link href="/" className="text-primary hover:text-primary-600 underline">
+                ホーム画面へ
+              </Link>
             </p>
           </CardBody>
         </Card>
@@ -170,7 +174,7 @@ export default function ArtistSearch() {
             />
             <Button
               color="primary"
-              onClick={handleSearch}
+              onPress={handleSearch}
               size="lg"
               className="md:w-auto"
               disabled={!searchQuery.trim()}

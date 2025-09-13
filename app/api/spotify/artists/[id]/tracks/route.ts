@@ -41,7 +41,7 @@ export async function GET(
     if (!topTracksResponse.ok) {
       const errorData = await topTracksResponse.json();
       return NextResponse.json(
-        { error: "Spotify API エラー", details: errorData },
+        { error: "Spotify連携エラー<br/>ホーム画面から再連携し直してください。", details: errorData },
         { status: topTracksResponse.status }
       );
     }
@@ -61,7 +61,7 @@ export async function GET(
     if (!albumResponse.ok) {
       const errorData = await albumResponse.json();
       return NextResponse.json(
-        { error: "Spotify API エラー", details: errorData },
+        { error: "Spotify連携エラー<br/>ホーム画面から再連携し直してください。", details: errorData },
         { status: albumResponse.status }
       );
     }

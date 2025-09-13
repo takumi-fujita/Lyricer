@@ -5,9 +5,9 @@ import { Input } from "@heroui/input";
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
 import { Spinner } from "@heroui/spinner";
-import { Badge } from "@heroui/badge";
 import { SearchIcon, MusicIcon } from "./icons";
 import SongCard from "../components/song-card";
+import Link from "next/link";
 import { useSpotify } from "@/contexts/spotify-context";
 
 interface SpotifyTrack {
@@ -178,6 +178,10 @@ export default function SongSearch({ artistId }: SongSearchProps) {
             </h3>
             <p className="text-default-500">
               楽曲一覧を表示するには、ホーム画面でSpotifyと連携してください。
+              <br />
+              <Link href="/" className="text-primary hover:text-primary-600 underline">
+                ホーム画面へ
+              </Link>
             </p>
           </CardBody>
         </Card>
@@ -201,7 +205,7 @@ export default function SongSearch({ artistId }: SongSearchProps) {
             />
             <Button
               color="primary"
-              onClick={handleSearch}
+              onPress={handleSearch}
               size="lg"
               className="md:w-auto"
               disabled={!searchQuery.trim()}
@@ -261,9 +265,10 @@ export default function SongSearch({ artistId }: SongSearchProps) {
         <Card>
           <CardBody className="text-center py-12">
             <MusicIcon className="mx-auto text-6xl text-default-300 mb-4" />
-            <h3 className="text-lg font-semibold text-default-600 mb-2">
-              楽曲が見つかりませんでした
-            </h3>
+              <h3 
+                className="text-lg font-semibold text-danger mb-2"
+                dangerouslySetInnerHTML={{ __html: error || "楽曲が見つかりませんでした" }}
+              />
             <p className="text-default-500">
               検索条件を変更して再度お試しください
             </p>

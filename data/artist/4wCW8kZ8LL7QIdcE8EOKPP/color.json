@@ -1,0 +1,36 @@
+{
+  "color": [
+    {
+      "part": "JUNON",
+      "color": "text-blue-600"
+    },
+    {
+      "part": "LEO",
+      "color": "text-green-600"
+    },
+    {
+      "part": "LEO",
+      "color": "text-green-600"
+    },
+    {
+      "part": "SOTA",
+      "color": "text-purple-600"
+    },
+    {
+      "part": "MANATO",
+      "color": "text-orange-600"
+    },
+    {
+      "part": "RYUHEI",
+      "color": "text-pink-600"
+    },
+    {
+      "part": "SHUNTO",
+      "color": "text-gray-600"
+    },
+    {
+      "part": "RYOKI",
+      "color": "text-red-600"
+    }
+  ]
+}
