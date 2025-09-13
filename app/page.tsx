@@ -32,6 +32,39 @@ export default function Home() {
     }
   }, [searchParams]);
 
+  // 初期描画時にSpotify連携状況を確認
+  useEffect(() => {
+    const checkSpotifyConnection = async () => {
+      try {
+        const token = localStorage.getItem("spotify_access_token");
+        if (token) {
+          // トークンの有効性を確認
+          const response = await fetch("https://api.spotify.com/v1/me", {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
+          
+          if (response.ok) {
+            const userData = await response.json();
+            console.log("Spotify連携確認成功:", userData);
+          } else {
+            console.log("Spotify連携が無効です。再認証が必要です。");
+            // 無効なトークンの場合は削除
+            localStorage.removeItem("spotify_access_token");
+          }
+        } else {
+          console.log("Spotify連携されていません。");
+        }
+      } catch (error) {
+        console.error("Spotify連携確認エラー:", error);
+      }
+    };
+
+    // コンポーネントマウント時に連携状況を確認
+    checkSpotifyConnection();
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-background-100">
       <div className="container mx-auto px-4 py-8">
