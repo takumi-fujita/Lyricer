@@ -23,7 +23,7 @@
     {
       "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
       "lyric": "I know I can",
-      "startTimeMs": 21000
+      "startTimeMs": 20000
     },
     {
       "part": ["SOTA"],
@@ -33,12 +33,12 @@
     {
       "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
       "lyric": "(Word up)",
-      "startTimeMs": 23000
+      "startTimeMs": 24000
     },
     {
       "part": ["SOTA"],
       "lyric": "あの日見てた景色のその彼方へと",
-      "startTimeMs": 24000
+      "startTimeMs": 25000
     },
     {
       "part": ["JUNON"],

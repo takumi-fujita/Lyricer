@@ -7,6 +7,7 @@ import { Spinner } from "@heroui/spinner";
 import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
 import { ArrowLeftIcon, PlayIcon, PauseIcon, StopIcon } from "../../../../../components/icons";
+import { Switch } from "@heroui/switch";
 import { useSpotify } from "@/contexts/spotify-context";
 import SpotifyPlayer, { SpotifyPlayerRef } from "../../../../../components/spotify-player";
 
@@ -80,8 +81,11 @@ export default function TrackPage({ params }: TrackPageProps) {
   const [currentPosition, setCurrentPosition] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showStickyControls, setShowStickyControls] = useState(false);
+  const [autoScroll, setAutoScroll] = useState(false);
+  const [lastScrollTime, setLastScrollTime] = useState(0);
   const { accessToken, isLoading: spotifyLoading } = useSpotify();
   const spotifyPlayerRef = useRef<SpotifyPlayerRef>(null);
+  const lyricsRef = useRef<HTMLDivElement>(null);
   
   // React.use()でparamsを取得
   const resolvedParams = use(params);
@@ -219,7 +223,47 @@ export default function TrackPage({ params }: TrackPageProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-
+  // 現在の歌詞行に自動スクロール（トグルがONの場合のみ）
+  useEffect(() => {
+    
+    if (!autoScroll || !lyrics || !lyrics.lyric) {
+      return;
+    }
+    
+    // スクロール頻度を制限（200ms間隔）
+    const now = Date.now();
+    if (now - lastScrollTime < 200) return;
+    
+    // 現在の歌詞インデックスを計算
+    let currentLyricIndex = -1;
+    for (let i = 0; i < lyrics.lyric.length; i++) {
+      const line = lyrics.lyric[i];
+      const startTimeMs = line.startTimeMs;
+      const nextStartTimeMs = i < lyrics.lyric.length - 1 
+        ? lyrics.lyric[i + 1].startTimeMs 
+        : Infinity;
+      
+      if (currentPosition >= startTimeMs && currentPosition < nextStartTimeMs) {
+        currentLyricIndex = i;
+        break;
+      }
+    }
+    
+    if (currentLyricIndex >= 0 && lyricsRef.current) {
+      const lyricElement = lyricsRef.current.children[currentLyricIndex] as HTMLElement;
+      if (lyricElement) {        
+        // より簡単なスクロール方法を使用
+        lyricElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'nearest'
+        });
+        
+        // スクロール時間を更新
+        setLastScrollTime(now);
+      }
+    }
+  }, [currentPosition, lyrics, autoScroll, lastScrollTime, isPlaying]);
 
   if (isLoading || spotifyLoading) {
     return (
@@ -389,25 +433,35 @@ export default function TrackPage({ params }: TrackPageProps) {
                   ))}
                 </div>
               </div>
-              <div id="playback-controls" className="flex items-center gap-4 mb-4">
-                <Button
-                  color="primary"
-                  variant="solid"
-                  size="lg"
-                  startContent={isPlaying ? <PauseIcon className="w-5 h-5" /> : <PlayIcon className="w-5 h-5" />}
-                  onPress={handlePlay}
-                >
-                  {isPlaying ? "一時停止" : "再生"}
-                </Button>
-                <Button
-                  color="default"
-                  variant="bordered"
-                  size="lg"
-                  startContent={<StopIcon className="w-5 h-5" />}
-                  onPress={handleStop}
-                >
-                  停止
-                </Button>
+              <div id="playback-controls" className="flex flex-col gap-4 mb-4">
+                <div className="flex items-center gap-4">
+                  <Button
+                    color="primary"
+                    variant="solid"
+                    size="lg"
+                    startContent={isPlaying ? <PauseIcon className="w-5 h-5" /> : <PlayIcon className="w-5 h-5" />}
+                    onPress={handlePlay}
+                  >
+                    {isPlaying ? "一時停止" : "再生"}
+                  </Button>
+                  <Button
+                    color="default"
+                    variant="bordered"
+                    size="lg"
+                    startContent={<StopIcon className="w-5 h-5" />}
+                    onPress={handleStop}
+                  >
+                    停止
+                  </Button>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Switch
+                    isSelected={autoScroll}
+                    onValueChange={setAutoScroll}
+                    size="sm"
+                  />
+                  <span className="text-sm text-default-600">歌詞に合わせて自動スクロール</span>
+                </div>
               </div>
             </div>
           </div>
@@ -437,6 +491,14 @@ export default function TrackPage({ params }: TrackPageProps) {
                   >
                     停止
                   </Button>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Switch
+                    isSelected={autoScroll}
+                    onValueChange={setAutoScroll}
+                    size="sm"
+                  />
+                  <span className="text-sm text-default-600">歌詞に合わせて自動スクロール</span>
                 </div>
                 {(isPlaying || currentPosition > 0) && (
                   <div className="text-sm text-default-500">
@@ -484,7 +546,7 @@ export default function TrackPage({ params }: TrackPageProps) {
               )}
             </div>
             {lyrics && lyrics.lyric && lyrics.lyric.length > 0 ? (
-              <div className="space-y-4">
+              <div ref={lyricsRef} className="space-y-4">
                 {lyrics.lyric.map((line, index) => {
                   const isCurrentLyric = getCurrentLyricIndex() === index;
                   return (
