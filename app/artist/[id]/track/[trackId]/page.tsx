@@ -82,7 +82,6 @@ export default function TrackPage({ params }: TrackPageProps) {
   const [showStickyControls, setShowStickyControls] = useState(false);
   const { accessToken, isLoading: spotifyLoading } = useSpotify();
   const spotifyPlayerRef = useRef<SpotifyPlayerRef>(null);
-  const lyricsRef = useRef<HTMLDivElement>(null);
   
   // React.use()でparamsを取得
   const resolvedParams = use(params);
@@ -220,35 +219,6 @@ export default function TrackPage({ params }: TrackPageProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 現在の歌詞行に自動スクロール
-  useEffect(() => {
-    if (!lyrics || !lyrics.lyric || currentPosition === 0) return;
-    
-    // 現在の歌詞インデックスを計算
-    let currentLyricIndex = -1;
-    for (let i = 0; i < lyrics.lyric.length; i++) {
-      const line = lyrics.lyric[i];
-      const startTimeMs = line.startTimeMs;
-      const nextStartTimeMs = i < lyrics.lyric.length - 1 
-        ? lyrics.lyric[i + 1].startTimeMs 
-        : Infinity;
-      
-      if (currentPosition >= startTimeMs && currentPosition < nextStartTimeMs) {
-        currentLyricIndex = i;
-        break;
-      }
-    }
-    
-    if (currentLyricIndex >= 0 && lyricsRef.current) {
-      const lyricElement = lyricsRef.current.children[currentLyricIndex] as HTMLElement;
-      if (lyricElement) {
-        lyricElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-        });
-      }
-    }
-  }, [currentPosition, lyrics]);
 
 
   if (isLoading || spotifyLoading) {
@@ -339,9 +309,6 @@ export default function TrackPage({ params }: TrackPageProps) {
     // 現在の再生位置に基づいて歌詞のインデックスを計算
     const currentTimeMs = currentPosition;
     
-    // デバッグ情報を出力
-    console.log("Current time:", currentTimeMs, "ms");
-    
     // 歌詞データから現在の時間に該当する歌詞を検索
     for (let i = 0; i < lyrics.lyric.length; i++) {
       const line = lyrics.lyric[i];
@@ -349,20 +316,13 @@ export default function TrackPage({ params }: TrackPageProps) {
       const nextStartTimeMs = i < lyrics.lyric.length - 1 
         ? lyrics.lyric[i + 1].startTimeMs 
         : Infinity;
-      
-      // デバッグ情報を出力
-      if (i < 5) { // 最初の5行のみログ出力
-        console.log(`Line ${i}: ${line.lyric.substring(0, 20)}... (${startTimeMs}ms - ${nextStartTimeMs}ms)`);
-      }
-      
+            
       // 現在の時間がこの歌詞の時間範囲内にあるかチェック
       if (currentTimeMs >= startTimeMs && currentTimeMs < nextStartTimeMs) {
-        console.log(`Found matching lyric at index ${i}: ${line.lyric}`);
         return i;
       }
     }
     
-    console.log("No matching lyric found");
     return -1;
   };
 
@@ -524,7 +484,7 @@ export default function TrackPage({ params }: TrackPageProps) {
               )}
             </div>
             {lyrics && lyrics.lyric && lyrics.lyric.length > 0 ? (
-              <div ref={lyricsRef} className="space-y-4">
+              <div className="space-y-4">
                 {lyrics.lyric.map((line, index) => {
                   const isCurrentLyric = getCurrentLyricIndex() === index;
                   return (

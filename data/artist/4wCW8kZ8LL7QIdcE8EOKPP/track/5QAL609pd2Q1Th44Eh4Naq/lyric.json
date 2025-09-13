@@ -33,7 +33,7 @@
     {
       "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
       "lyric": "(Word up)",
-      "startTimeMs": 24000
+      "startTimeMs": 23000
     },
     {
       "part": ["SOTA"],
@@ -68,7 +68,7 @@
     {
       "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
       "lyric": "Singing from the East side to the West side",
-      "startTimeMs": 47000
+      "startTimeMs": 49000
     },
     {
       "part": ["JUNON"],
@@ -78,7 +78,7 @@
     {
       "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
       "lyric": "この世界 ≒ Play ground, Do what u like",
-      "startTimeMs": 53000
+      "startTimeMs": 54000
     },
     {
       "part": ["RYOKI"],
@@ -118,17 +118,17 @@
     {
       "part": ["RYUHEI"],
       "lyric": "成功の理由？",
-      "startTimeMs": 70000
+      "startTimeMs": 71000
     },
     {
       "part": ["SHUNTO"],
       "lyric": "今どんな気分？",
-      "startTimeMs": 71000
+      "startTimeMs": 72000
     },
     {
       "part": ["RYUHEI", "SHUNTO"],
       "lyric": "それどころか道の途中",
-      "startTimeMs": 73000
+      "startTimeMs": 74000
     },
     {
       "part": ["JUNON"],
@@ -158,7 +158,7 @@
     {
       "part": ["RYOKI"],
       "lyric": "遠い夢だと ねぇどうぞ笑ってよ もう叶え方なら知っているから",
-      "startTimeMs": 84000
+      "startTimeMs": 85000
     },
     {
       "part": ["MANATO"],
@@ -193,12 +193,12 @@
     {
       "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
       "lyric": "この世界 ≒ Play ground, do what u like",
-      "startTimeMs": 111000
+      "startTimeMs": 112000
     },
     {
       "part": ["SHUNTO"],
       "lyric": "描く どんな夢すらも Dejavu",
-      "startTimeMs": 114000
+      "startTimeMs": 115000
     },
     {
       "part": ["MANATO"],
@@ -223,7 +223,7 @@
     {
       "part": ["SHUNTO"],
       "lyric": "常識なんて 興味が無いね",
-      "startTimeMs": 133000
+      "startTimeMs": 134000
     },
     {
       "part": ["JUNON"],
