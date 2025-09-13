@@ -68,7 +68,7 @@
     {
       "part": ["MANATO"],
       "lyric": "マイペースな雲に見下され",
-      "startTimeMs": 109000
+      "startTimeMs": 111000
     },
     {
       "part": ["RYOKI"],
@@ -93,7 +93,7 @@
     {
       "part": ["SOTA"],
       "lyric": "もしも遠い所で一人ぼっちになっても 宇宙の向こうから見てみれば隣同士",
-      "startTimeMs": 130000
+      "startTimeMs": 129000
     },
     {
       "part": ["SOTA", "RYOKI"],
@@ -128,12 +128,12 @@
     {
       "part": ["JUNON"],
       "lyric": "変わらない空はない 大丈夫 ずっと 泣いて笑ってあと一歩進もう 一人じゃない もう一歩",
-      "startTimeMs": 171000
+      "startTimeMs": 173000
     },
     {
       "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
       "lyric": "雨の日でも Every cloud has a silver lining 晴れの日でも We are under the same shining",
-      "startTimeMs": 192000
+      "startTimeMs": 191000
     }
   ]
 }
