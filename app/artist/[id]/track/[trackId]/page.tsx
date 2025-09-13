@@ -552,14 +552,14 @@ export default function TrackPage({ params }: TrackPageProps) {
                   return (
                     <div 
                       key={index} 
-                      className={`flex items-start gap-4 p-3 rounded-lg transition-all duration-300 ${
+                      className={`flex items-start p-3 rounded-lg transition-all duration-300 ${
                         isCurrentLyric 
                           ? 'bg-primary/10 border-l-4 border-primary shadow-md' 
                           : 'hover:bg-default-50'
                       }`}
                     >
                       {line.part && (
-                        <div className="flex-shrink-0">
+                        <div className="flex-shrink-0 w-32">
                           <div className="flex flex-col gap-1">
                             {Array.isArray(line.part) ? (
                               // 2人ずつグループに分けて表示
