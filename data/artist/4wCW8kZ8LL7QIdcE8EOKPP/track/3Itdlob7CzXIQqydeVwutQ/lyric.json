@@ -1,0 +1,89 @@
+{
+  "lyric": [
+    {
+      "part": ["LEO"],
+      "lyric": "あと少し ほんのちょっと この手伸ばせば 届きそうな夢が 目の前に見えてる",
+      "startTimeMs": 7000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "君とまだいたいな 縺れ合う期待と不安 混ぜたら飲み干した 初めての味がした",
+      "startTimeMs": 16000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "ずっとこのままじゃいられない",
+      "startTimeMs": 24000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Ooh wee Ooh wee Ooh Ahh yah Ahh yah Ahh",
+      "startTimeMs": 29000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "君がくれた憧れの欠片 鼓動した",
+      "startTimeMs": 33000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Ooh wee Ooh wee Ooh Ahh yah Ahh yah Ahh",
+      "startTimeMs": 37000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "もう行かなきゃだって 目と目が合って 言葉が詰まって なに躊躇ってんのって ねえ",
+      "startTimeMs": 41000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "君の瞳が問うから 応えたくて 1, 2 Step 振り絞って歌う All eyes on us! Baby",
+      "startTimeMs": 50000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "だけどきっと Bye Bye だけじゃ終わんない Yeah yeah 夢を超えて会おうよ 精一杯のBye Bye 君は止まんない Yeah yeah さよならはスタートライン そうさ",
+      "startTimeMs": 58000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "喜びと抱き合いたい 悲しみとも High five ひとりじゃない ありがとうと Bye Bye 涙ごと All my life 君を歌うよ",
+      "startTimeMs": 76000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "We're gonna get high もう止まってらんない Stay fly どんな今日がスタンバイ？ Go sign 見逃さず Start again and again ほら次は君の番だぜ",
+      "startTimeMs": 92000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "進む先がもし曲がり角 なら飛び越えて掴むさ明日を 夢が照らし煌めかせる涙と 胸の軋む痛みすらありがとう",
+      "startTimeMs": 101000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "あと少し ほんのちょっと って時のよそ見 Oh! 一番の注意ポイント 気をつけなきゃね",
+      "startTimeMs": 110000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "もう止めらんないね 動き出した Days 運命ならいいね Hope this is our fate",
+      "startTimeMs": 118000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "君の瞳が言うから 伝えたくて 1, 2 Step 振り絞って歌う All eyes on us! Baby",
+      "startTimeMs": 127000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "だけどきっと Bye Bye だけじゃ終わんない Yeah yeah 夢を超えて会おうよ 精一杯の Bye Bye 君は止まんない Yeah yeah さよならはスタートライン そうさ",
+      "startTimeMs": 137000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "喜びと抱き合いたい 悲しみとも High five ひとりじゃない ありがとうと Bye Bye 涙ごと All my life 君を歌うよ",
+      "startTimeMs": 156000
+    }
+  ]
+}
