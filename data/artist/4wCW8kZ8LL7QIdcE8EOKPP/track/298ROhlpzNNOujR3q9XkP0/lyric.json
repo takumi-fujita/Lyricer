@@ -1,0 +1,139 @@
+{
+  "lyric": [
+    {
+      "part": ["LEO"],
+      "lyric": "大丈夫だって言って欲しくて 大丈夫じゃない自分を隠して",
+      "startTimeMs": 1000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "太陽みたいに笑えた日々は 雲の向こうでどんな顔かな",
+      "startTimeMs": 13000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "君が君で在れるように",
+      "startTimeMs": 24000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "僕は何ができるのかな",
+      "startTimeMs": 31000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "ちっぽけで消えそうな僕ら 胸の痛みがこぼれていくまま",
+      "startTimeMs": 37000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "泣いてもいい 空も泣いてるから",
+      "startTimeMs": 45000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "雨の日だって 誰かにとって 寄り添う涙に変わるんだろう",
+      "startTimeMs": 51000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "間違えたっていい 不安定なままでいい",
+      "startTimeMs": 63000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "いつか いつか太陽も顔を出すから",
+      "startTimeMs": 69000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "晴れの日だって あなたを待って",
+      "startTimeMs": 75000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "雲の向こうで悩んでいるんだろう",
+      "startTimeMs": 81000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "変わらない空はない 大丈夫 ずっと 泣いて笑ってあと一歩",
+      "startTimeMs": 87000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "ありがとうが言えなくて ごめんねで塗り固めて",
+      "startTimeMs": 99000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "マイペースな雲に見下され",
+      "startTimeMs": 109000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "まぁいいか 笑いたきゃ笑え",
+      "startTimeMs": 114000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "最低な今日だって",
+      "startTimeMs": 118000
+    },
+    {
+      "part": ["MANATO", "RYOKI"],
+      "lyric": "流れて消えて行くだけ",
+      "startTimeMs": 120000
+    },
+    {
+      "part": ["SOTA", "RYOKI"],
+      "lyric": "嵐の前 台風の目 波乱と静けさは背中合わせ",
+      "startTimeMs": 123000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "もしも遠い所で一人ぼっちになっても 宇宙の向こうから見てみれば隣同士",
+      "startTimeMs": 130000
+    },
+    {
+      "part": ["SOTA", "RYOKI"],
+      "lyric": "We are under the same sky",
+      "startTimeMs": 135000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "雨の日だって 誰かにとって 寄り添う涙に変わるんだろう",
+      "startTimeMs": 137000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "間違えたっていい 不安定なままでいい",
+      "startTimeMs": 149000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "いつか いつか太陽も顔を出すから",
+      "startTimeMs": 155000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "晴れの日だって あなたを待って",
+      "startTimeMs": 161000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "雲の向こうで笑ってるんだろう",
+      "startTimeMs": 167000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "変わらない空はない 大丈夫 ずっと 泣いて笑ってあと一歩進もう 一人じゃない もう一歩",
+      "startTimeMs": 171000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "雨の日でも Every cloud has a silver lining 晴れの日でも We are under the same shining",
+      "startTimeMs": 192000
+    }
+  ]
+}

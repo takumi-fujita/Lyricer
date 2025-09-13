@@ -211,8 +211,8 @@ export default function TrackPage({ params }: TrackPageProps) {
       const controlsElement = document.getElementById('playback-controls');
       if (controlsElement) {
         const rect = controlsElement.getBoundingClientRect();
-        // コントロールが画面上部から見えなくなったら固定表示
-        setShowStickyControls(rect.bottom < 0);
+        // コントロールが画面上部から少しでも隠れたら固定表示
+        setShowStickyControls(rect.top < 70);
       }
     };
 
@@ -538,17 +538,29 @@ export default function TrackPage({ params }: TrackPageProps) {
                     >
                       {line.part && (
                         <div className="flex-shrink-0">
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-col gap-1">
                             {Array.isArray(line.part) ? (
-                              line.part.map((partName, partIndex) => (
-                                <span 
-                                  key={partIndex}
-                                  className={`inline-block px-2 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary ${
-                                    isCurrentLyric ? 'ring-2 ring-primary ring-offset-2' : ''
-                                  }`}
-                                >
-                                  <span className={getPartColor(partName)}>{partName}</span>
-                                </span>
+                              // 2人ずつグループに分けて表示
+                              line.part.reduce((groups: string[][], partName, index) => {
+                                const groupIndex = Math.floor(index / 2);
+                                if (!groups[groupIndex]) {
+                                  groups[groupIndex] = [];
+                                }
+                                groups[groupIndex].push(partName);
+                                return groups;
+                              }, []).map((group, groupIndex) => (
+                                <div key={groupIndex} className="flex gap-1">
+                                  {group.map((partName, partIndex) => (
+                                    <span 
+                                      key={partIndex}
+                                      className={`inline-block px-2 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary ${
+                                        isCurrentLyric ? 'ring-2 ring-primary ring-offset-2' : ''
+                                      }`}
+                                    >
+                                      <span className={getPartColor(partName)}>{partName}</span>
+                                    </span>
+                                  ))}
+                                </div>
                               ))
                             ) : (
                               <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary ${
