@@ -1,0 +1,214 @@
+{
+  "lyric": [
+    {
+      "part": ["SHUNTO"],
+      "lyric": "神様はたまに残酷で",
+      "startTimeMs": 8000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "結末を教えてはくれない No way to say",
+      "startTimeMs": 13000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "僕らの昨日に間違いは無いから",
+      "startTimeMs": 18000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "いつだって君と現在を遊ぶ",
+      "startTimeMs": 22000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "I'm going out どこにでも",
+      "startTimeMs": 26000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "To the left to the right",
+      "startTimeMs": 29000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "We'll do it right 子どもの様に",
+      "startTimeMs": 31000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "まだ遊び足りないんだ 派手に行こう Rock the party",
+      "startTimeMs": 35000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "What's poppin？",
+      "startTimeMs": 40000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "ハイになる瞬間 理由は君もわかってる",
+      "startTimeMs": 41000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "We'll be fine, let's take off I-I-I feel so blissful",
+      "startTimeMs": 45000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "世界中が Playground 味わうんだ",
+      "startTimeMs": 49000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oh-o-o-oh-oh (To the left to the right) Oh-o-o-oh-oh (To the front to the back) Oh-o-o-oh-oh (To the top we the best) We'll be fine, let's take off I-I-I feel so blissful",
+      "startTimeMs": 55000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "形のない愛を謳う",
+      "startTimeMs": 73000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "輝くほど目が眩む",
+      "startTimeMs": 77000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "太陽の下 土砂降りの中 笑顔一つ作るのもタフな時間 常識はたまに邪魔になる その先を探しここまで来た",
+      "startTimeMs": 81000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "答えなんて意外と簡単 仲間 居場所がガイダンス 血汗涙すら遊び尽くそうぜ Like Kids in the park",
+      "startTimeMs": 91000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "俺らなら大丈夫",
+      "startTimeMs": 100000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "I know you're following your own soul",
+      "startTimeMs": 101000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "俺らなら大丈夫",
+      "startTimeMs": 104000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "運命引き連れてド派手に行こう",
+      "startTimeMs": 107000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "まだ踊り足りないんだ もう一度 Rock the party",
+      "startTimeMs": 108000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "What's poppin？",
+      "startTimeMs": 113000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "分かち合う瞬間 いつだって君が笑ってる",
+      "startTimeMs": 115000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "We'll be fine, let's take off I-I-I feel so blissful",
+      "startTimeMs": 118000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "天辺で Pop champagne 連れて行くから",
+      "startTimeMs": 123000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oh-o-o-oh-oh (To the left to the right) Oh-o-o-oh-oh (To the front to the back) Oh-o-o-oh-oh (To the top we the best) We'll be fine, let's take off I-I-I feel so blissful",
+      "startTimeMs": 127000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "I'm going out どこにでも",
+      "startTimeMs": 145000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "We now rule the world",
+      "startTimeMs": 148000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oh",
+      "startTimeMs": 149000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "I'm going out どこにでも",
+      "startTimeMs": 150000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "To the left to the right",
+      "startTimeMs": 153000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "I'm going out どこにでも",
+      "startTimeMs": 155000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "We can change this world",
+      "startTimeMs": 158000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oh",
+      "startTimeMs": 159000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "We'll do it right 子どもの様に",
+      "startTimeMs": 160000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "まだ遊び足りないんだ 派手に行こう Rock the party",
+      "startTimeMs": 163000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "What's poppin？",
+      "startTimeMs": 168000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "ハイになる瞬間 理由は君もわかってる",
+      "startTimeMs": 169000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "We'll be fine, let's take off I-I-I feel so blissful",
+      "startTimeMs": 173000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "世界中が Playground 味わうんだ",
+      "startTimeMs": 178000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oh-o-o-oh-oh (To the left to the right) Oh-o-o-oh-oh (To the front to the back) Oh-o-o-oh-oh (To the top we the best) We'll be fine, let's take off I-I-I feel so blissful",
+      "startTimeMs": 183000
+    }
+  ]
+}
