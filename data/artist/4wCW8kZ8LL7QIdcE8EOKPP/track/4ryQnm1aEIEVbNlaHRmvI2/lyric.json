@@ -1,0 +1,164 @@
+{
+  "lyric": [
+    {
+      "part": ["MANATO"],
+      "lyric": "破られた safety 知りたい瞳の裏側の正体",
+      "startTimeMs": 7000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "その見透かした態度 その笑み 何度も善と悪を見失う",
+      "startTimeMs": 15000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "汚れた仮面を剥がし合う 浅はかな言葉が良く似合う all night",
+      "startTimeMs": 25000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "It's like a game",
+      "startTimeMs": 32000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "激しくヒビが入る十字架 君という名の罪も受け入れるよ",
+      "startTimeMs": 34000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "口にしちゃいけない果実だって 分かってて眩んだ眼",
+      "startTimeMs": 43000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "甘く香るジャスミンに誘われ 無様に果てるだけ",
+      "startTimeMs": 48000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "早く僕を罰して抗えない I'm guilty",
+      "startTimeMs": 52000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "想像もつかない成れの果て",
+      "startTimeMs": 57000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "また一つ罪を犯す",
+      "startTimeMs": 60000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "乱れていく髪 風に泳ぐ度 誘われ目が離せなくなる Magic",
+      "startTimeMs": 62000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "煙たい蜜の味 絡まる肌に 擽り合う終わりの始まり",
+      "startTimeMs": 66000
+    },
+    {
+      "part": ["SOTA", "RYOKI"],
+      "lyric": "Dirty, Nasty,",
+      "startTimeMs": 71000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "堕ちるまで",
+      "startTimeMs": 73000
+    },
+    {
+      "part": ["SOTA", "RYOKI"],
+      "lyric": "You be on me",
+      "startTimeMs": 74000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "揺れて輝くピアスに手をかけて Oh, oh, oh",
+      "startTimeMs": 75000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "隠すほど 見たくなる衝動 汗ばんだ本能",
+      "startTimeMs": 80000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "ただほんのちょっとがもう奥底",
+      "startTimeMs": 84000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "次の手口は？ 通知の相手は？ 罪の裁きは？ その手が目が指が… Hold on",
+      "startTimeMs": 88000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "口にしちゃいけない果実だって 分かってて眩んだ眼",
+      "startTimeMs": 98000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "甘く香るジャスミンに誘われ 無様に果てるだけ",
+      "startTimeMs": 102000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "早く僕を罰して抗えない I'm guilty",
+      "startTimeMs": 106000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "想像もつかない成れの果て",
+      "startTimeMs": 111000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "また一つ罪を犯す",
+      "startTimeMs": 113000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "迫って来る time limit 最後の審判へ向かう 本音とは違う台詞の数",
+      "startTimeMs": 115000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "危険な罠に悪魔と天使さえも欺く二人 誰にも止める術などない",
+      "startTimeMs": 124000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "口にしちゃいけない果実だって 分かってて眩んだ眼",
+      "startTimeMs": 133000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "甘く香るジャスミンに誘われ 無様に果てるだけ",
+      "startTimeMs": 138000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "早く僕を罰して抗えない I'm guilty",
+      "startTimeMs": 142000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "想像もつかない成れの果て",
+      "startTimeMs": 147000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "また一つ罪を犯す",
+      "startTimeMs": 150000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "Just take it",
+      "startTimeMs": 151000
+    }
+  ]
+}
