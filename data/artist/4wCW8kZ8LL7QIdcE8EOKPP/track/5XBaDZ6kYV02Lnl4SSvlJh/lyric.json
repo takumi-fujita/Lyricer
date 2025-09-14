@@ -1,0 +1,144 @@
+{
+  "lyric": [
+    {
+      "part": ["LEO"],
+      "lyric": "「変わらないで」 「そのままの君がいい」 僕の何を見て言うの？ 昨日すらもう遠い過去の事なのに",
+      "startTimeMs": 12000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "身嗜みに気をつけて 腰は低く胸は張って 夢とリアルの狭間で藻掻いてる",
+      "startTimeMs": 28000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "僕らは何も変わってない その為に変わっていく",
+      "startTimeMs": 41000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "そう何も変わってない その為に変わっていく",
+      "startTimeMs": 49000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Grow up, Grow up",
+      "startTimeMs": 56000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "But it won't stop changing you",
+      "startTimeMs": 59000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Grow up, Grow up",
+      "startTimeMs": 63000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "We grow up and switch it up",
+      "startTimeMs": 67000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "常識だとか当たり前 そんな物で雁字搦め 変わろうとしないのはなんで？ 変えにきたってだけ",
+      "startTimeMs": 71000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "あれは素晴らしい これも素晴らしい その先が見たいんだ",
+      "startTimeMs": 78000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "You don't need to know everything きっとわかりっこない",
+      "startTimeMs": 85000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "You can come and have fun with me 邪魔者なんていない",
+      "startTimeMs": 90000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "正解なんてない",
+      "startTimeMs": 94000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "だから探していたい",
+      "startTimeMs": 97000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "僕らは何も変わってない その為に変わっていく",
+      "startTimeMs": 99000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "そう何も変わってない その為に変わっていく",
+      "startTimeMs": 107000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Grow up, Grow up",
+      "startTimeMs": 114000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "But it won't stop changing you",
+      "startTimeMs": 118000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Grow up, Grow up",
+      "startTimeMs": 121000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "We grow up and switch it up",
+      "startTimeMs": 125000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "儚いね人生なんて ただじっと待ってたって 咲かないで散った Someday Wait, 飛ばしすぎないで…It's ok 一つ飛ばしの階段を蹴っ飛ばして そこはスターダムで Underground",
+      "startTimeMs": 130000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "僕らは何も変わってない その為に変わっていく",
+      "startTimeMs": 144000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "そう何も変わってない その為に変わっていく",
+      "startTimeMs": 151000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Grow up, Grow up",
+      "startTimeMs": 159000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "But it won't stop changing you",
+      "startTimeMs": 163000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Grow up, Grow up",
+      "startTimeMs": 166000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "We grow up and switch it up",
+      "startTimeMs": 170000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "何も変わってない",
+      "startTimeMs": 188000
+    }
+  ]
+}
