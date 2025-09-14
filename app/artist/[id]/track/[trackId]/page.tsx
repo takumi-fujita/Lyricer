@@ -414,6 +414,9 @@ export default function TrackPage({ params }: TrackPageProps) {
               
               {/* 作詞・作曲者情報 */}
               <div className="mb-6">
+                {/* <h3 className="text-sm font-semibold text-foreground-600 uppercase tracking-wide mb-3">
+                  作詞・作曲者
+                </h3> */}
                 <div className="space-y-2">
                   {track.artists_details?.map((artist, index) => (
                     <div key={artist.id} className="text-sm">

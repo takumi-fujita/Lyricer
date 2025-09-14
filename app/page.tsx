@@ -47,14 +47,10 @@ export default function Home() {
           
           if (response.ok) {
             const userData = await response.json();
-            console.log("Spotify連携確認成功:", userData);
           } else {
-            console.log("Spotify連携が無効です。再認証が必要です。");
             // 無効なトークンの場合は削除
             localStorage.removeItem("spotify_access_token");
           }
-        } else {
-          console.log("Spotify連携されていません。");
         }
       } catch (error) {
         console.error("Spotify連携確認エラー:", error);
