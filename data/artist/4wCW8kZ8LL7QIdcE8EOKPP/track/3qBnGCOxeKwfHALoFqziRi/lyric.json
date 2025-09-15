@@ -1,0 +1,59 @@
+{
+  "lyric": [
+    {
+      "part": ["MANATO"],
+      "lyric": "Show's just getting started, coming up Y'all already know we're on fire 想像の遥か向こう Coming up",
+      "startTimeMs": 1
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "感性が止まない 完全を見たかい? 型にハマる気ない Give a shock your heart",
+      "startTimeMs": 19000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "衝動と絆が担保 二度目のスタート 神からのアンコール I got No.1 でも油断はない お前が山を越える間に空を飛ぶのさ アンダスタン?",
+      "startTimeMs": 28000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Winner, loser 正義、悪じゃない 炎は誰も消せやしないだろ I know",
+      "startTimeMs": 38000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "誰かの正解じゃ足りやしない Cold wind blows？ Shut up, be myself 邪魔する暇すら与えない So fly Who's the best? 刻むネーム「BF」",
+      "startTimeMs": 48000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Show's just getting started, coming up Y'all already know we're on fire 想像の遥か向こう Coming up",
+      "startTimeMs": 57000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "嗅がせるDog 密に罠 しがみつく目に刺さる 抜け出せない? そんなわけない 追いつけるか? 背中すら見せない",
+      "startTimeMs": 67000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "指先が語る評価じゃ踊れない 誇れる自分がここに呼んだんだ",
+      "startTimeMs": 77000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "刃は向けない 足跡には花束 もう逃げる場所は必要ない 歩く夢を常に照らすライト",
+      "startTimeMs": 86000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Show's just getting started, coming up Y'all already know we're on fire 想像の遥か向こう Coming up",
+      "startTimeMs": 96000
+    },
+    {
+      "part": ["SHUNTO", "MANATO"],
+      "lyric": "Show's just getting started, coming up Y'all already know we're on fire 想像の遥か向こう Coming up We reach the top, now BF is coming up",
+      "startTimeMs": 105000
+    }
+  ]
+}
