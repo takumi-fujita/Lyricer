@@ -559,7 +559,7 @@ export default function TrackPage({ params }: TrackPageProps) {
                       }`}
                     >
                       {line.part && (
-                        <div className="flex-shrink-0 w-32">
+                        <div className="flex-shrink-0 w-32 mr-4">
                           <div className="flex flex-col gap-1">
                             {Array.isArray(line.part) ? (
                               // 2人ずつグループに分けて表示
