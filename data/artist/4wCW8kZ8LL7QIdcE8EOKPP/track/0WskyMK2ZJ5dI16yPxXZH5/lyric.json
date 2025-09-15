@@ -1,0 +1,99 @@
+{
+  "lyric": [
+    {
+      "part": ["SHUNTO"],
+      "lyric": "桁違いのステータス",
+      "startTimeMs": 1000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "履き潰したキックスがワンダース 才能の分の努力でバランス 出来立てのダンスフロア Tシャツを濡らす汗が My ice",
+      "startTimeMs": 3000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "ワンムーブ One Kill",
+      "startTimeMs": 11000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "見ざるを得ない",
+      "startTimeMs": 13000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "今 誰がきてる？",
+      "startTimeMs": 14000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "言わざるを得ない",
+      "startTimeMs": 15000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "着飾るのは嫌いじゃないが そこがゴールのお前とは違う 見てる世界",
+      "startTimeMs": 16000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "最近調子がいいですね どうせすぐに態度が2XL",
+      "startTimeMs": 20000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "うるさいな 無駄に媚びない がまだ図に乗れるほど小物じゃないな 背負うストーリー 誓う勝利 見据えるてっぺんは遠い 1を愛し100作り出す その100の1に愛を映し出す",
+      "startTimeMs": 24000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Sorry, もう Ain't no stoppin' us 下がりな Boys 持ってくのさ All in Gotta get it now Milli-Billi 桁違いのステータス",
+      "startTimeMs": 37000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Be Jealous 飽くまでも狙う World famous そのためにすがるべきは神様ではない 磨き続けたステータス",
+      "startTimeMs": 71000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "引き返さないぜ 最高速度だってマイペース 興味なんかないぜ 小さいパイの取り合いだなんて",
+      "startTimeMs": 79000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "どこまでも Nice & smooth 身に余るほどの大観衆",
+      "startTimeMs": 88000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "連れてくのさ世界中 これは夢でなく予定の範疇",
+      "startTimeMs": 92000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "引き返さないぜ 最高速度だってマイペース 興味なんかないぜ 小さいパイの取り合いだなんて",
+      "startTimeMs": 96000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "No way out 最後は結果 過程は関係ない",
+      "startTimeMs": 104000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "だからこそ勝ち方にこだわるのがマナー 美学の無い亡者たちは彼方 Keep going no matter what ゼロから登ってるスターダム",
+      "startTimeMs": 112000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "毎日 毎晩 埋まるスケジュール I got 街中に看板 まだかき回す戦略は大胆 先頭は誰だ？ 残念 見てみなバックミラー このカーチェイス 納車直後 即表彰 あと瞬き数回でその頂上",
+      "startTimeMs": 122000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Sorry, もう Ain't no stoppin' us 下がりな Boys 持ってくのさ All in Gotta get it now Milli-Billi 桁違いのステータス",
+      "startTimeMs": 138000
+    }
+  ]
+}
