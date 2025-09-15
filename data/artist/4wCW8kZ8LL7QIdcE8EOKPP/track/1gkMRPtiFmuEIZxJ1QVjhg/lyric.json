@@ -1,0 +1,194 @@
+{
+  "lyric": [
+    {
+      "part": ["MANATO"],
+      "lyric": "Tell me baby どんな君も ひとつ残らずに教えてよ",
+      "startTimeMs": 10000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "Better days どんな毎日も 一秒だって見逃したくないよ",
+      "startTimeMs": 16000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "繰り返してる 終わらないルーティン 変わり映えしてたい",
+      "startTimeMs": 23000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "君とならハミ出したいな Ya ready？ この手を取って",
+      "startTimeMs": 29000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Let your fears go 哀しみには愛を So let yourself go 胸の夢中 燃やしたら Stay wild and",
+      "startTimeMs": 35000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Be free！ 新しい朝陽が昇るような笑顔 僕に見せてよ So I want you to be",
+      "startTimeMs": 47000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "Be free！ 今すぐに自由に夢を見ようよ If you can dream it, you can do it すべて思いのままさ",
+      "startTimeMs": 58000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "I know まだ物足りないんだろう？",
+      "startTimeMs": 70000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "Stop and go どこまでも付き合いましょう",
+      "startTimeMs": 73000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Wa！",
+      "startTimeMs": 75500
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "雲の上でChill",
+      "startTimeMs": 76000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oh！",
+      "startTimeMs": 77500
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "誰が邪魔できる？",
+      "startTimeMs": 78000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "他の誰かじゃない君と今も夢を見る",
+      "startTimeMs": 79000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Let's go baby 忘れないで 僕らやがて飛び立つ Brand new day",
+      "startTimeMs": 81000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "It's okay 思い出して この手 離さない いつも隣で",
+      "startTimeMs": 87000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "踏み出したら 止めないで Movin' 振り向かないし",
+      "startTimeMs": 93000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "君とならムチャしたいな Ya ready？ 扉 ひらいて",
+      "startTimeMs": 100000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Let your soul glow ためらいには勇気を So let yourself go 今すぐ未来 抱き寄せよう Stay strong and",
+      "startTimeMs": 105000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Be free！ 新しい朝陽が昇るような笑顔 僕に見せてよ So I want you to be",
+      "startTimeMs": 118000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Be free！ 今すぐに自由に夢を見ようよ If you can dream it, you can do it すべて思いのままさ",
+      "startTimeMs": 129000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "I wanna be",
+      "startTimeMs": 140000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "what？",
+      "startTimeMs": 142000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "You wanna be",
+      "startTimeMs": 143000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "what？",
+      "startTimeMs": 144000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "We already got the wing Come with me Ah yeah！",
+      "startTimeMs": 145000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "I wanna be",
+      "startTimeMs": 147000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "what？",
+      "startTimeMs": 148000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "You wanna be",
+      "startTimeMs": 149000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "what？",
+      "startTimeMs": 150000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Now we're gonna fly",
+      "startTimeMs": 150500
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "Come with",
+      "startTimeMs": 151000
+    },
+    {
+      "part": ["SOTA", "RYOKI"],
+      "lyric": "me",
+      "startTimeMs": 152000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "もっと行こうぜ スピードアップ 宙を舞う涙 追い越して笑おうぜ 憂鬱な明日 ダイヤモンド、ミリオンダラー とか何もなくたってスーパーマン 大人から見たらピーターパン？",
+      "startTimeMs": 153000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "OK！",
+      "startTimeMs": 161500
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "なら連れてくネバーランド",
+      "startTimeMs": 163000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "Be free！ 新しい朝陽が昇るような笑顔 僕に見せてよ So I want you to be",
+      "startTimeMs": 164000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Be free！ 今すぐに自由に夢を見ようよ If you can dream it, you can do it すべて思いのままさ",
+      "startTimeMs": 176000
+    }
+  ]
+}
