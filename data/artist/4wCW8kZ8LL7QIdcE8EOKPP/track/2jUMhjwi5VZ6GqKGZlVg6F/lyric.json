@@ -1,0 +1,189 @@
+{
+  "lyric": [
+    {
+      "part": ["RYUHEI"],
+      "lyric": "Wanna hear ya scream",
+      "startTimeMs": 3000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Wanna hear ya scream",
+      "startTimeMs": 10000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "格の違い 覚悟の違い 誰も並べやしない I know it",
+      "startTimeMs": 15000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "もう抜け出せない 正気じゃいられない 時代の動く音 聞こえたら 声あげな",
+      "startTimeMs": 23000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "遥か遠く見えていた未来を追い越せ すべて塗り替えてやるさ OK",
+      "startTimeMs": 30000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "侮りな お前が振り向いた所に もう俺はいない We gotta go",
+      "startTimeMs": 40000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "想像も予想も不可能 得体が知れないだろ？ 飲み込んでやるよ お前のその期待も不安も",
+      "startTimeMs": 45000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "エリアからエリア 恐怖と畏怖と歓声と悲鳴と歩く まるでエイリアンさ",
+      "startTimeMs": 53000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "Hahaha... I Wanna hear ya scream",
+      "startTimeMs": 58000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "最高が何なのか証明しよう 圧倒するこのステージ",
+      "startTimeMs": 62000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Scream it loud",
+      "startTimeMs": 68000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "冷静になんてさせない ほら",
+      "startTimeMs": 69000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Scream it loud",
+      "startTimeMs": 73000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "壊れるくらい",
+      "startTimeMs": 75000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "上手な言葉はいらない 心が感じているはずさ 僕らを縛れるものなどない 共に行こう Hell yeah",
+      "startTimeMs": 77000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "聞こえてきた野次を笑え 他人に価値を決めさせやしないぜ",
+      "startTimeMs": 92000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "壁やルールは 思い込んでるだけで 最初からないんだ We gotta go",
+      "startTimeMs": 101000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "ジャスト、スリム、オーバーサイズ この際 値札は重要じゃない",
+      "startTimeMs": 106000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "常に身に纏った Hype",
+      "startTimeMs": 110000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "そう俺以上のブランド物はない",
+      "startTimeMs": 112000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "古びたケージから今 君をこの次のステージまで 連れ去りにきたエイリアンさ Hahaha… I Wanna hear ya scream",
+      "startTimeMs": 114000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "最高が何なのか証明しよう 圧倒するこのステージ",
+      "startTimeMs": 123000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Scream it loud",
+      "startTimeMs": 129000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "冷静になんてさせない ほら",
+      "startTimeMs": 130000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Scream it loud",
+      "startTimeMs": 134000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "壊れるくらい",
+      "startTimeMs": 136000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "待つ気はない 君もそうだろう？ 誰かに Judgeさせるなよ",
+      "startTimeMs": 138000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "心も その声も 君のためのもの",
+      "startTimeMs": 146000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Scream it loud",
+      "startTimeMs": 164000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "最高が何なのか証明しよう 圧倒するこのステージ",
+      "startTimeMs": 166000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Scream it loud",
+      "startTimeMs": 171000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "冷静になんてさせない ほら",
+      "startTimeMs": 173000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Scream it loud",
+      "startTimeMs": 176000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "壊れるくらい",
+      "startTimeMs": 178000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "冷静になんてさせない ほら",
+      "startTimeMs": 187000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Scream it loud",
+      "startTimeMs": 191000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "壊れるくらい",
+      "startTimeMs": 193000
+    }
+  ]
+}
