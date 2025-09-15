@@ -1,0 +1,144 @@
+{
+  "lyric": [
+    {
+      "part": ["MANATO"],
+      "lyric": "忘れられない朝 何度でも踊り続けた 夜明けまで あの時 あの場所 仲間と 振り返る あの日々を",
+      "startTimeMs": 14000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "出かけよう 雨の日でも 些細な喧嘩したことも 分かり合うきっかけだと ずっと一緒に 一緒に歩こう",
+      "startTimeMs": 31000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "そっと記憶の中をかたどり 何度も目を逸らさず 確かめ きっと1人きりじゃない 共に見つけたい 1つだけ",
+      "startTimeMs": 49000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "会えば冗談言って 肩を寄せ 笑い合える またこれからも",
+      "startTimeMs": 64000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "晴れた展望台からの眺め It just moment… Moment… 忘れない",
+      "startTimeMs": 72000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "なんとなく過ごす瞬間 絶え間ない出会いの瞬間 信じ合う答えの瞬間 目を開ければ…",
+      "startTimeMs": 81000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "なんとなく過ごす瞬間 絶え間ない出会いの瞬間 信じ合う答えの瞬間 出会える また…",
+      "startTimeMs": 90000
+    },
+    {
+      "part": ["SOTA", "RYOKI"],
+      "lyric": "どうにかなりそうさ",
+      "startTimeMs": 98000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "毎日がまるでジェットコースター",
+      "startTimeMs": 100000
+    },
+    {
+      "part": ["SOTA", "RYOKI"],
+      "lyric": "どうせ皆 視聴者",
+      "startTimeMs": 102000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "話題に群がる ヤボな亡者",
+      "startTimeMs": 104000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "行き先は一体どちら？ 咲いて散った その残り香 不安もなく 笑う時間だなんて あまりないもんな",
+      "startTimeMs": 106000
+    },
+    {
+      "part": ["SHUNTO", "MANATO"],
+      "lyric": "Ah no, no",
+      "startTimeMs": 113000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "何をしてきたとかより 誰といたかの方が大事 人気や認知より 君とずっといたいんだ なぁ 綺麗事だと笑うかな",
+      "startTimeMs": 115000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "それでもいい",
+      "startTimeMs": 126000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "今 夢見てもいい",
+      "startTimeMs": 129000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "ねぇ そうでしょう…？",
+      "startTimeMs": 130000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "ずっと記憶の中をかたどり 何度も目を逸らさず確かめ きっと1人きりじゃない 共に見つけたい一つだけ",
+      "startTimeMs": 131000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "会えば冗談言って 肩を寄せ 笑い合える またこれからも",
+      "startTimeMs": 146000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "晴れた展望台からの眺め It just moment… Moment… 忘れない",
+      "startTimeMs": 155000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "会えば冗談言って 肩を寄せ",
+      "startTimeMs": 179000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "笑い合える またこれからも",
+      "startTimeMs": 183000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "晴れた展望台からの眺め",
+      "startTimeMs": 187000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "It just moment… Moment… 忘れない",
+      "startTimeMs": 191000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "なんとなく過ごす瞬間 絶え間ない出会いの瞬間",
+      "startTimeMs": 196000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "信じ合う答えの瞬間 目を開ければ…",
+      "startTimeMs": 201000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "なんとなく過ごす瞬間 絶え間ない出会いの瞬間",
+      "startTimeMs": 205000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "信じ合う答えの瞬間 出会える また…",
+      "startTimeMs": 209000
+    }
+  ]
+}
