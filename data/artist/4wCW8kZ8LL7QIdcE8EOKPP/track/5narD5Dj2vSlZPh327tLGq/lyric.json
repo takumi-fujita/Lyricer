@@ -1,0 +1,139 @@
+{
+  "lyric": [
+    {
+      "part": ["RYUHEI"],
+      "lyric": "ウワベの綺麗な言葉は必要ない",
+      "startTimeMs": 19000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "取り繕い媚び売る時間がもったいない",
+      "startTimeMs": 25000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "見え透いた未来で何がしたいの？もし変えれるならどうなりたいの？",
+      "startTimeMs": 32000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "増えるだけの荷物はもうBye-bye",
+      "startTimeMs": 39000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Hurry up！ かっ飛ばす ボーッと待ってたってどうなる？ほらOne time for your mind フラフラしてちゃすぐタイムアップ",
+      "startTimeMs": 45000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "トラブルも上等 乱気流が濃厚 銀河系のその先まで見逃さずにLock on",
+      "startTimeMs": 52000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "汚れたキックスにほつれたTシャツ スーツにタイでも心にB-Stance",
+      "startTimeMs": 59000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "あるがまま踊れ Life is freestyle 正解？ナニソレ？知らねぇ",
+      "startTimeMs": 65000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Get a",
+      "startTimeMs": 71000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "move on",
+      "startTimeMs": 72000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "I got myself I got, I got myself",
+      "startTimeMs": 76000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Move on",
+      "startTimeMs": 79000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "I got myself I got, I got myself",
+      "startTimeMs": 82000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "中身も見ず箱だけ見て Pick 使い捨てのピックじゃ持ったってワンシーズン",
+      "startTimeMs": 98000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "どうせ全部デタラメなら心で探せ 楽しくやれなきゃ No",
+      "startTimeMs": 105000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "ヤツらはどうせ咲いてから見る 桜はいつか散る事を知る 刹那燃やして灰になるその時まで情熱が今迸る",
+      "startTimeMs": 111000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "I don't give a damn about it all もう止まる気ないサーキット",
+      "startTimeMs": 118000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "エンジン噴かしたままアクセル踏めないなら今サヨナラ",
+      "startTimeMs": 122000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "過去も未来も全て今の残像 That's blink of an eye",
+      "startTimeMs": 125000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "例えこれが刹那の夢でも",
+      "startTimeMs": 132000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "I'm totally going for broke この心の赴くままに",
+      "startTimeMs": 137000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "I got, I got myself",
+      "startTimeMs": 143000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Are you ready？ 夢の向こうに Now touchdown",
+      "startTimeMs": 146000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Move on",
+      "startTimeMs": 153000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "I got myself I got, I got myself",
+      "startTimeMs": 156000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Move on",
+      "startTimeMs": 160000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "I got myself I got, I got myself",
+      "startTimeMs": 163000
+    }
+  ]
+}
