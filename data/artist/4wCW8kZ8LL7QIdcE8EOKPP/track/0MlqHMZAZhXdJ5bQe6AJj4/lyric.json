@@ -1,0 +1,94 @@
+{
+  "lyric": [
+    {
+      "part": ["JUNON"],
+      "lyric": "退廃的今日の先に 探す くすんだ色 曖昧な期待の先へ 叫ぶんだ 何回も",
+      "startTimeMs": 10000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "嘆いても戻らない 誰かが語る未来のサイズ",
+      "startTimeMs": 22000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "霞む目に狭まる世界 寄り道しなきゃ見えていない 今日へ",
+      "startTimeMs": 28000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Lost Generation 応答して もがく その理由を愛で繋いで 真っ暗闇を走行して 背中照らせ 朝焼け",
+      "startTimeMs": 34000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "後悔もないよ どこか誇らしげ 不完全な衝動に ただ 明日を睨む希望 掲げて",
+      "startTimeMs": 45000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Ah 足掻くよ もう一回",
+      "startTimeMs": 58000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "等身大のままで どこまでも逃げる影 追いかけて",
+      "startTimeMs": 63000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "I know, You know, We know 不満気な世界",
+      "startTimeMs": 69000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "We know… 今日を駆け抜けろ",
+      "startTimeMs": 75000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "そっぽ向いたヘッドライトが 照らした道にあった太陽 神様 こんな僕は迷子？ 模範解答に興味ないもん 焦り 不安も相棒 大丈夫 I know 僕ら きっと最高 We know！ We go！",
+      "startTimeMs": 80000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "裸足のまま若さを重ねて あのビル風に何度も飲まれて 弱さも全部愛したいだけ 僕らの時代を",
+      "startTimeMs": 92000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Brave Generation そう呼んで 無表情な街を染め上げて 行き先なんて I don't care 足跡のない方へ",
+      "startTimeMs": 103000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "ありふれた現実 抱き締めて",
+      "startTimeMs": 115000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "不安定を謳歌して シナリオ踏み付けろ",
+      "startTimeMs": 121000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "Ah 足掻くよ もう一回",
+      "startTimeMs": 127000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "等身大のままで どこまでも逃げる影 追いかけて",
+      "startTimeMs": 132000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "I know, You know, We know 不満気な世界",
+      "startTimeMs": 138000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "We know… 今日を駆け抜けろ",
+      "startTimeMs": 144000
+    }
+  ]
+}
