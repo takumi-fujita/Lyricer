@@ -1,0 +1,169 @@
+{
+  "lyric": [
+    {
+      "part": ["RYOKI"],
+      "lyric": "君が見ていた景色が見たいんだ",
+      "startTimeMs": 10000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "僕は今どんな色に染まりどんな風に笑うの？",
+      "startTimeMs": 22000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "誰かが言う普通や その普通が作った異常者",
+      "startTimeMs": 32000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "どちらに入るんでしょうか？ ねぇもっと君の声を聞かせて",
+      "startTimeMs": 40000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "もし僕の愚行が 間違いだって過ちだって",
+      "startTimeMs": 49000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "幾度もこの手を取った 君のその体温は正解さ",
+      "startTimeMs": 57000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "もう少し触って この胸の衝動は身勝手",
+      "startTimeMs": 66000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "どこまでも不安定な世界ならいっそ その歪みを愛そう",
+      "startTimeMs": 73000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "I do a-ya-ya-ya",
+      "startTimeMs": 81000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "どうにもならない そんなの当たり前",
+      "startTimeMs": 83000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "とうに戻れない Betrayal Game",
+      "startTimeMs": 87000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "どうも変わらない そんなとこが愛",
+      "startTimeMs": 91000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "共犯なんじゃない？ Betrayal Game",
+      "startTimeMs": 95000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "まるでテスト前の教師と生徒 瞬きの度確かめるYes, No",
+      "startTimeMs": 99000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "ふわり揺れて漂う劣情 教えてこの先何がベスト？",
+      "startTimeMs": 103000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "曖昧な言葉で濁して 夢に逃げる君は酷いね",
+      "startTimeMs": 108000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "ほっといてほっとかないで 決着なんて求めてないGame",
+      "startTimeMs": 112000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "もし君の視線が 偽りだって投げやりだって",
+      "startTimeMs": 116000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "幾度もそこに映った 僕のこの感情は絶対さ",
+      "startTimeMs": 123000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "もう少し触って この胸の衝動は身勝手",
+      "startTimeMs": 133000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "どこまでも不安定な世界ならいっそ その歪みを愛そう",
+      "startTimeMs": 139000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "I do a-ya-ya-ya",
+      "startTimeMs": 148000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "どうにもならない そんなの当たり前",
+      "startTimeMs": 150000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "とうに戻れない Betrayal Game",
+      "startTimeMs": 154000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "どうも変わらない そんなとこが愛",
+      "startTimeMs": 158000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "共犯なんじゃない？ Betrayal Game",
+      "startTimeMs": 162000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Go or Stay It's Betrayal Game",
+      "startTimeMs": 174000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "もう少し触って この胸の衝動は身勝手",
+      "startTimeMs": 183000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "どこまでも不安定な世界ならいっそ その歪みを…Ah I do a-ya-ya-ya",
+      "startTimeMs": 190000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "どうにもならない そんなの当たり前",
+      "startTimeMs": 200000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "とうに戻れない Betrayal Game",
+      "startTimeMs": 204000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "どうも変わらない そんなとこが愛",
+      "startTimeMs": 209000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "共犯なんじゃない？ Betrayal Game",
+      "startTimeMs": 213000
+    }
+  ]
+}
