@@ -1,0 +1,44 @@
+{
+  "lyric": [
+    {
+      "part": ["RYOKI"],
+      "lyric": "We gonna show you haha! 自分の在り方 誰も辿れない 俺の生き様 You can call me JOKER! Do you feel I'm a threatening monster どちらにせよ 無駄に鎖 飛ばすわ Crazy driver! 握らせないペース 滲ませないこのSweat I'll never listen to your shit so you better fasten your seat belt and follow my lead! 死神ともデート 女神と見てる日の出 命すらも懸けられないならば そこで見とけ",
+      "startTimeMs": 10000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Hold up baby 揺らせ そのBody 今更スローダウン厳禁 鍵かかってるエンジン 制御しきって傍観してるお前には 我慢なんないスピード",
+      "startTimeMs": 35000
+    },
+    {
+      "part": ["SOTA", "SHUNTO", "RYOKI"],
+      "lyric": "片っ端から巻き込む Spin 触れたら即 吹き飛ぶ Spin 残さず全部刈り取る Spin Top speed 音速 Spin, Spin, Spin",
+      "startTimeMs": 47000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "量産型のSecond hand 置いて進む 荒れ果てた荒野 上り下りあるジェットコースター スリルすら楽しめそうじゃん？ ゴールはデカい 宇宙行きのナビ 大気圏突破して 無重力でダンシング 調子じゃなく勢いに乗って 今 土星の輪っかの上 Oh yeah",
+      "startTimeMs": 71000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "You got 4 minutes, are you ready？ Ha ナメんな 3分でいい この道で勝てる気？ 口だけの奴にはアレルギー 下積みと経験値 搭載済みのR-engine 遅れてやってくるヒーローが俺のイメージ 周回遅れてるのに あいつらはシラばっくれてる 馴れ合いで楽したゲーム 捲し立てる 俺らのペース シューマッハも旗振るレース 誰も追い越せないよ 俺の壁 誰も追うことすらしないだけ",
+      "startTimeMs": 95000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "邪魔するなだなんて言う気はないが かかってくるのは無謀で勇気じゃないぜ I feel your jealousy もう全部ありがたい Hate me, love me, baby go Spin, Spin, Spin",
+      "startTimeMs": 119000
+    },
+    {
+      "part": ["SOTA", "SHUNTO", "RYOKI"],
+      "lyric": "片っ端から巻き込む Spin 触れたら即 吹き飛ぶ Spin 残さず全部刈り取る Spin Top speed 音速 Spin, Spin, Spin La la la… Spin, Spin, Spin",
+      "startTimeMs": 131000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "走り抜けてきた道 まだ香り残るシーン 戻らないが 映す背中 光るピース 行こうぜ 時間は常に… Move on",
+      "startTimeMs": 168000
+    }
+  ]
+}
