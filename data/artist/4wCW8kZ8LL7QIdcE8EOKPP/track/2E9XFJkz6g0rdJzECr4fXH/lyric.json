@@ -1,0 +1,89 @@
+{
+  "lyric": [
+    {
+      "part": ["RYOKI"],
+      "lyric": "I'm back in the building 世界中遊べ Stand up to the 理不尽 混沌を躍れ 普通って何？ かったるい毎日を遊園地に変えてく Magic I'm aiming for the chance to change this game Yo better watch out",
+      "startTimeMs": 1
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "考え尽くす A to Z その最後掲げるは B の流儀 傷だらけで輝くブルージーンズ ルーズでもタイトでも良い INIMI のビート響かす世界中に",
+      "startTimeMs": 22000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "どんな色を混ぜようと",
+      "startTimeMs": 35000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "全て飲み込む黒の様",
+      "startTimeMs": 38000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "闇夜でいて 照らす炎",
+      "startTimeMs": 42000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "準備はいいか群がりな",
+      "startTimeMs": 45000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Now you're gonna bump around",
+      "startTimeMs": 47000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Push, push Going crazy like a horse, prancing horse Push, push Going crazy Bump around, bump around BF comin' at ya See you in the rapture BF comin' at ya たちまち爆発 BF comin' at ya See you in the rapture BF comin' at ya たちまち爆発",
+      "startTimeMs": 50000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "永遠すら 一瞬の様 一瞬がもうほら永遠の様 その儚さも全てを請け負う どこまでも共に堕ちよう",
+      "startTimeMs": 76000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "全身にブルーライト 無礼講さ苦しゅうない LV すら使い捨てるくらい 理性とはこの先バイバイ え、もう直ぐ終点? おいおい笑わせんなって このまま宇宙へ We only take new ways",
+      "startTimeMs": 90000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "どんな邪魔が入ろうとも",
+      "startTimeMs": 103000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "軽くいなす鳥の様",
+      "startTimeMs": 107000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "地球ごと踊らすほど",
+      "startTimeMs": 110000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "準備はいいか群がりな",
+      "startTimeMs": 113000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Now you're gonna bump around",
+      "startTimeMs": 116000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Push, push Going crazy like a horse, prancing horse Push, push Going crazy Bump around, bump around BF comin' at ya See you in the rapture BF comin' at ya たちまち爆発 BF comin' at ya See you in the rapture BF comin' at ya たちまち爆発",
+      "startTimeMs": 118000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Na-na-na",
+      "startTimeMs": 145000
+    }
+  ]
+}
