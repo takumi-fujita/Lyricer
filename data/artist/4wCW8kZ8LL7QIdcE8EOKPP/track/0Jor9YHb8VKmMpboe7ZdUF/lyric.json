@@ -1,0 +1,119 @@
+{
+  "lyric": [
+    {
+      "part": ["RYOKI"],
+      "lyric": "二人の運命の先は どこに消えてゆくのだろう",
+      "startTimeMs": 13000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "さざ波や 海の景色さえも 瞳に映す余裕すらもない",
+      "startTimeMs": 26000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "もう少しだけ強ければ 何気なく笑いあった日も",
+      "startTimeMs": 40000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "向き合って 泣き怒った過去に戻れるかな？",
+      "startTimeMs": 53000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "抱きしめたい 君だけ 触れられない 痛みすらも",
+      "startTimeMs": 65000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "生きている意味 ただ一つさえ 君がくれるの 遠く見えても",
+      "startTimeMs": 80000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "消えない 願いや 守りたい 想いが もう",
+      "startTimeMs": 92000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "この広い世界 広い空 はぐれない様に 手を繋いでいよう",
+      "startTimeMs": 105000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "気付いてた いつの日からだろう 心の城崩さぬように",
+      "startTimeMs": 121000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "怖いんでしょう？ それだけでも言えたら 地平線は近づくのかな",
+      "startTimeMs": 134000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "遠のいてくその距離に 間に合うかは もう分からないけど",
+      "startTimeMs": 148000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "どうしようも無い、溢れる感情が僕をただ...",
+      "startTimeMs": 160000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "抱きしめたい 君だけ 触れられない 痛みすらも",
+      "startTimeMs": 173000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "生きている意味 ただ一つさえ 君がくれるの 遠く見えても",
+      "startTimeMs": 187000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "消えない 願いや 守りたい 想いが もう",
+      "startTimeMs": 200000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "この広い世界 広い空 はぐれない様に 手を繋いでいよう",
+      "startTimeMs": 213000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "抱きしめたい 君だけ",
+      "startTimeMs": 228000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "触れられない 痛みすらも",
+      "startTimeMs": 235000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "生きている意味 ただ一つさえ",
+      "startTimeMs": 242000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "君がくれるの 遠く見えても",
+      "startTimeMs": 249000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "消えない 願いや",
+      "startTimeMs": 255000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "守りたい 想いが もう",
+      "startTimeMs": 261000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "この広い世界 広い空 はぐれない様に 二人で始めよう",
+      "startTimeMs": 268000
+    }
+  ]
+}

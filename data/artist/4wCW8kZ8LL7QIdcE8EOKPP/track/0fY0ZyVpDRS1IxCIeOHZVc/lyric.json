@@ -1,0 +1,184 @@
+{
+  "lyric": [
+    {
+      "part": ["JUNON"],
+      "lyric": "ねぇどこから来たの？ どこに行くの？ どんな涙を泳いでるの？",
+      "startTimeMs": 1
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "もう大丈夫 こっちにおいでよ 同じ海に愛されてるから",
+      "startTimeMs": 7000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oooh, Oooh",
+      "startTimeMs": 15000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "隣にいたいな",
+      "startTimeMs": 17000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oooh, Oooh",
+      "startTimeMs": 19000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Forever family",
+      "startTimeMs": 21000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "傷つけて傷つけられて 抱えた過去を僕に持たせて",
+      "startTimeMs": 23000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "すれ違って 振り翳した手 何度でもまた握り合うまで",
+      "startTimeMs": 27000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "太陽に乗っかった 3Days いつだって Don't lie 2Yourself なりたい自分 会いたい君が待ってる",
+      "startTimeMs": 31000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "手に負えない痛みも寄り添うよずっと 君らしい大袈裟な夢だから",
+      "startTimeMs": 39000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "どんな嵐も追い風にしよう",
+      "startTimeMs": 55000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "Sailing Sailing もっと上に Sailing",
+      "startTimeMs": 59000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "今日も明日も夢を唄うのさ",
+      "startTimeMs": 63000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "Sailing Sailing Sailing Sailing",
+      "startTimeMs": 67000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Dan-dan-dance with me 最高を Cherish",
+      "startTimeMs": 71000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "海も空も 目を覚ますほど",
+      "startTimeMs": 75000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Dan-dan-dance with me 最高を Cherish",
+      "startTimeMs": 79000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "どれだけ泣いたっていいんだ",
+      "startTimeMs": 83000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oooh, Oooh",
+      "startTimeMs": 104000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "間違いなんてないさ",
+      "startTimeMs": 105000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oooh, Oooh",
+      "startTimeMs": 107000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "We're never giving up",
+      "startTimeMs": 109000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Oooh, Oooh",
+      "startTimeMs": 111000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "俯かないでいいんだ 踏み鳴らそう Every time",
+      "startTimeMs": 113000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "生憎の空模様 神様ゴールはどこ？ 失敗もご愛嬌 やり直そう何度も",
+      "startTimeMs": 119000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "荒波に乗っかってハイチーズ 隠れんぼ太陽はどっち？ 舵を取るんだ 賭けてきた未来へ向かって",
+      "startTimeMs": 127000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "手にしても 手にしても 失ってしまうけど",
+      "startTimeMs": 135000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "心を覗けば家族 仲間がいてくれると知った",
+      "startTimeMs": 143000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "どんな嵐も追い風にしよう",
+      "startTimeMs": 151000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Sailing Sailing もっと上に Sailing",
+      "startTimeMs": 156000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "今日も明日も君と唄うのさ",
+      "startTimeMs": 159000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Sailing Sailing Sailing Sailing",
+      "startTimeMs": 163000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "Dan-dan-dance with me 最高を Cherish",
+      "startTimeMs": 167000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "海も空も 目を覚ますほど",
+      "startTimeMs": 171000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "Dan-dan-dance with me 最高を Cherish",
+      "startTimeMs": 175000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "どれだけ泣いたっていいんだ",
+      "startTimeMs": 179000
+    }
+  ]
+}
