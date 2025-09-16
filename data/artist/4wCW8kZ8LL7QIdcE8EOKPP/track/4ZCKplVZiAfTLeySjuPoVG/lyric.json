@@ -1,0 +1,209 @@
+{
+  "lyric": [
+    {
+      "part": ["RYUHEI"],
+      "lyric": "溜息交じりのWeekend 同じ味にも飽きて",
+      "startTimeMs": 12000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "グラス越し踊るスポットライト 泡と共にハジけた",
+      "startTimeMs": 19000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "追い越されてく日々に",
+      "startTimeMs": 25000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "運命からの招待",
+      "startTimeMs": 29000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "ただ待ってた訳じゃない",
+      "startTimeMs": 33000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Now or never, make it happen",
+      "startTimeMs": 35000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "I've never felt it こんな気持ち初めてさ",
+      "startTimeMs": 39000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "あの日の自分の身勝手が 胸の中で光ってる 誇って行こう最高の未完成",
+      "startTimeMs": 45000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "感じて… Be the one Can't stop going going going",
+      "startTimeMs": 51000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "今すぐ… Be the one 響き合うほどに踊り出す鼓動",
+      "startTimeMs": 58000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Yeah wow",
+      "startTimeMs": 66000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Ready, set, go！",
+      "startTimeMs": 68000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "Ah, 唯一無二のShow time",
+      "startTimeMs": 70000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Yeah wow",
+      "startTimeMs": 72000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "もう止まらない Shining one",
+      "startTimeMs": 75000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "もうとっくに I'm ready ブレーキなんて踏まない方が素敵 スリルすらスパイスにして荒波をドライブ いっそ空にFly 下に見える大都会",
+      "startTimeMs": 81000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "もうすぐ追いつく あの日 目にした流星群",
+      "startTimeMs": 92000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "どこまででも飛べそうさ 退屈をエスケープ 1人でも (Good)",
+      "startTimeMs": 95000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "でも君とならもっと…",
+      "startTimeMs": 100000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Yeah yeah",
+      "startTimeMs": 101000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "Now or never, make it happen",
+      "startTimeMs": 102000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "I've never seen it こんな景色初めてさ",
+      "startTimeMs": 106000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "いつもアンバランス But so what？ 不安なんかない 背中押す泥まみれのナンバーワン",
+      "startTimeMs": 112000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "感じて… Be the one Can't stop going going going",
+      "startTimeMs": 118000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "今すぐ… Be the one 響き合うほどに踊り出す鼓動",
+      "startTimeMs": 124000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Yeah wow",
+      "startTimeMs": 132000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "Ready, set, go！",
+      "startTimeMs": 135000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Ah, 唯一無二のShow time",
+      "startTimeMs": 136000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Yeah wow",
+      "startTimeMs": 139000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "もう止まらない Shining one",
+      "startTimeMs": 141000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "Yeah, touch your heart",
+      "startTimeMs": 177000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Can you feel it？",
+      "startTimeMs": 183000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Be the one ずっと Moving moving moving with you",
+      "startTimeMs": 185000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Be the one 未体験の始まりさ Baby, shake it up",
+      "startTimeMs": 191000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "Be the one Can't stop going going going",
+      "startTimeMs": 198000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "今すぐ… Be the one 響き合うほどに踊り出す鼓動",
+      "startTimeMs": 204000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Yeah wow",
+      "startTimeMs": 211000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "Ready, set, go！",
+      "startTimeMs": 215000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "Ah, 唯一無二のShow time",
+      "startTimeMs": 216000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "Yeah wow",
+      "startTimeMs": 218000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "もう止まらない Shining one",
+      "startTimeMs": 221000
+    }
+  ]
+}
