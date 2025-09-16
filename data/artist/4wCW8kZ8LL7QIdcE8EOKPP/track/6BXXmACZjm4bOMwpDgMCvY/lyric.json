@@ -1,0 +1,174 @@
+{
+  "lyric": [
+    {
+      "part": ["JUNON"],
+      "lyric": "味気ない日常に 行き場を失った Spotlight 磨けばほら 鏡に映る君は ねぇ 輝いていたんだ",
+      "startTimeMs": 8000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "明日にはって 暗い言葉になって 涙目な昨日に ありがとう言えるようになれたよ あの時の笑顔に 伝えたいな",
+      "startTimeMs": 31000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "気付けばさ 隣で咲いていた君のその手から 僕にくれた優しさで 照らされた",
+      "startTimeMs": 53000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "目を遮る霧の中",
+      "startTimeMs": 64000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "でも振り向く未来が そこで待っていてくれるから",
+      "startTimeMs": 66000
+    },
+    {
+      "part": ["RYUHEI", "RYOKI"],
+      "lyric": "Just please",
+      "startTimeMs": 71000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Can you hold me tight？",
+      "startTimeMs": 73000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "巡り合わない日々に うんざりしたまま 叶わない夢に 嫉妬していた",
+      "startTimeMs": 74000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "夜が明けても",
+      "startTimeMs": 84000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "またいつでも",
+      "startTimeMs": 86000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "違う自分に",
+      "startTimeMs": 87000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "出会うべき君に",
+      "startTimeMs": 89000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "Loveが 届くように",
+      "startTimeMs": 93000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "不完全な昨日に祈りを 間違っていたとしてもいいさ すべてがいつか君になるから",
+      "startTimeMs": 96000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "愛情も不安も痛みも 間違ってなんかないだろう？",
+      "startTimeMs": 106000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "絡みつく雑音や 胸を刺す葛藤が Ah",
+      "startTimeMs": 116000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "君を呼ぶ一瞬が 僕を呼ぶその声が 歓びに溢れるまで",
+      "startTimeMs": 127000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "Suddenly 訪れるその時 歩み始める 愛を誓った情を 途切らせないように 強く",
+      "startTimeMs": 149000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "幾つもの季節が去った",
+      "startTimeMs": 170000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "でも変わらないまま",
+      "startTimeMs": 173000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "ずっと",
+      "startTimeMs": 176000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "One life, one style, myself",
+      "startTimeMs": 178000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "色の褪せた日々の中 期限切れに近づく心に 錆びついていたあの日の言葉",
+      "startTimeMs": 181000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "この声で",
+      "startTimeMs": 191000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "鳴らした夢",
+      "startTimeMs": 193000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "同じ道で",
+      "startTimeMs": 194000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "足音を君と",
+      "startTimeMs": 195000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "One life, one style, myself 新たな夢を追い求めて 今の自分が一番だって… 思う自分の背中につく汚れ 呑気なプレッシャー 過去の自分に増えた Buddy 正気な正解 俺はいないマイク持つ幼馴染 そんな不安すらも背負う価値をくれた君に魅せたいんだ",
+      "startTimeMs": 199000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "今の僕だからこそ",
+      "startTimeMs": 230000
+    },
+    {
+      "part": ["LEO", "SOTA"],
+      "lyric": "魅せれる夢を",
+      "startTimeMs": 233000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "不安定な今日に祈りを 間違っていたとしてもいいさ すべてが僕になるんだ",
+      "startTimeMs": 234000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "目の前で光る瞳は 間違ってなんかないから",
+      "startTimeMs": 245000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "絡みつく雑音や 胸を刺す葛藤が僕らが生まれてきたその意味が",
+      "startTimeMs": 250000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "君を呼ぶ一瞬が 僕を呼ぶその声が歓びに溢れるんだ",
+      "startTimeMs": 266000
+    }
+  ]
+}
