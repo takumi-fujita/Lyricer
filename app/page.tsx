@@ -84,7 +84,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">パート可視化</h3>
                 <p className="text-default-500 text-sm">
-                  グループで歌っている歌手のどのパートを誰が歌っているかを視覚的に確認
+                  ボーイズグループ、ガールズグループ、ボーイズ&ガールズグループで歌っている歌手のどのパートを誰が歌っているかを可視化
                 </p>
               </CardBody>
             </Card>
@@ -95,6 +95,8 @@ export default function Home() {
                 <h3 className="text-lg font-semibold mb-2">Spotify連携</h3>
                 <p className="text-default-500 text-sm">
                   Spotifyと連携して、あなたの音楽ライブラリから楽曲を探索
+                  <br/>
+                  ※Spotifyを利用しているユーザーのみが利用可能です
                 </p>
               </CardBody>
             </Card>
@@ -180,6 +182,39 @@ export default function Home() {
               </p>
             </div>
           )}
+
+          {/* 歌詞追加リクエストセクション */}
+          <Card className="w-full max-w-2xl mt-16">
+            <CardBody className="p-6 text-center">
+              <div className="w-12 h-12 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                <span className="text-primary text-2xl">📝</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">歌詞を追加したいアーティストはありますか？</h3>
+              <p className="text-default-500 mb-4">
+                まだ歌詞データがないアーティストの歌詞を追加してほしい場合は、下記のフォームからリクエストしてください。
+              </p>
+              <div className="bg-warning/10 border border-warning/20 rounded-lg p-3 mb-12">
+                <p className="text-warning-600 font-semibold text-sm">
+                  ボーイズグループ、ガールズグループ、ボーイズ&ガールズグループのみ対応しています
+                </p>
+              </div>
+              <Button
+                as="a"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeyvAMFRn1HwD3h86-3zEVRvjEZXWLd0dBcTi7UQHOIey_uZw/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonStyles({
+                  color: "primary",
+                  radius: "full",
+                  variant: "bordered",
+                  size: "lg",
+                })}
+                startContent={<span className="text-lg">📋</span>}
+              >
+                歌詞追加リクエスト
+              </Button>
+            </CardBody>
+          </Card>
         </section>
       </div>
     </div>
