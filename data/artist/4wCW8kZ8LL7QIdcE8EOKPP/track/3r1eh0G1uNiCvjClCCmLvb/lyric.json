@@ -1,0 +1,139 @@
+{
+  "lyric": [
+    {
+      "part": ["SHUNTO"],
+      "lyric": "どんな綺麗なシナリオも書けない 夢物語も語れない",
+      "startTimeMs": 16000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "そこに君がいなきゃ 色も匂いもないんだ",
+      "startTimeMs": 26000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "運命だって 恋に落ちるよ",
+      "startTimeMs": 35000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "100万年後も枯れはしないよ",
+      "startTimeMs": 40000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "こっちにおいで 僕の目をみて",
+      "startTimeMs": 44000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "君だけを映すから",
+      "startTimeMs": 48000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "もう二度と 離せやしない君を 世界を振り切って 痛みと踊ろう",
+      "startTimeMs": 51000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "夜明けにキスをしよう",
+      "startTimeMs": 63000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "星に願ったりしない",
+      "startTimeMs": 66000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "もう一度 生まれてきたとしても",
+      "startTimeMs": 69000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "世界の果てまで君を探そう",
+      "startTimeMs": 76000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "はじめての永遠と",
+      "startTimeMs": 81000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "鍵をかけて誓おう",
+      "startTimeMs": 86000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "言葉じゃ足りなくて でも言葉をかき集める 瞬間の沈黙のその向こう側に 伸ばして交わる手",
+      "startTimeMs": 89000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "約束は儚くて 見失わないように 離れないで 君じゃなきゃ嫌だよなんて 当たり前だろ My babe",
+      "startTimeMs": 97000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "どんなドラマ、ムービー、漫画、ミュージカル だって絶対比べるのは無理さ ずっとファンタジー ずっとリアル 目と目が合ったら言うよ いいかい？",
+      "startTimeMs": 106000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "こっちにおいで ずっとそばにいて",
+      "startTimeMs": 115000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "君しかいないから",
+      "startTimeMs": 119000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "もう二度と 離せやしない君を 世界を振り切って 痛みと踊ろう",
+      "startTimeMs": 122000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "夜明けにキスをしよう",
+      "startTimeMs": 135000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "星に願ったりしない",
+      "startTimeMs": 137000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "もう一度 生まれてきたとしても",
+      "startTimeMs": 140000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "世界の果てまで君を探そう",
+      "startTimeMs": 148000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "あいしてる永遠に",
+      "startTimeMs": 152000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "鍵をかけて誓おう",
+      "startTimeMs": 157000
+    },
+    {
+      "part": ["JUNON", "LEO", "SOTA", "MANATO", "RYUHEI", "SHUNTO", "RYOKI"],
+      "lyric": "LA LA LA…",
+      "startTimeMs": 162000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "鍵をかけて誓おう",
+      "startTimeMs": 194000
+    }
+  ]
+}
