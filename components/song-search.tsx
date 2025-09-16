@@ -66,7 +66,7 @@ export default function SongSearch({ artistId }: SongSearchProps) {
 
     try {
       const currentOffset = reset ? 0 : offset;
-      const response = await fetch(`/api/spotify/artists/${artistId}/tracks?limit=10&offset=${currentOffset}`, {
+      const response = await fetch(`/api/spotify/artists/${artistId}/tracks?limit=20&offset=${currentOffset}`, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },

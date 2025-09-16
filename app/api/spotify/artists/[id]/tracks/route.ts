@@ -50,7 +50,7 @@ export async function GET(
     
     // アルバムから楽曲を取得（制限付き）
     const albumResponse = await fetch(
-      `https://api.spotify.com/v1/artists/${artistId}/albums?market=JP&limit=20&offset=0&include_groups=album,single`,
+      `https://api.spotify.com/v1/artists/${artistId}/albums?market=JP&limit=50&offset=0&include_groups=album,single`,
       {
         headers: {
           Authorization: `Bearer ${accessToken}`,
@@ -69,7 +69,7 @@ export async function GET(
     const albumData = await albumResponse.json();
     
     // アルバムから楽曲を取得（並列処理で効率化）
-    const albumTracksPromises = albumData.items.slice(0, 10).map(async (album: any) => {
+    const albumTracksPromises = albumData.items.slice(0, 20).map(async (album: any) => {
       try {
         const tracksResponse = await fetch(
           `https://api.spotify.com/v1/albums/${album.id}/tracks?market=JP&limit=50`,
@@ -141,10 +141,17 @@ export async function GET(
       index === self.findIndex(t => t.id === track.id)
     );
     
+    // リリース日順（降順）で並び替え
+    const sortedTracks = uniqueTracks.sort((a, b) => {
+      const dateA = new Date(a.album.release_date);
+      const dateB = new Date(b.album.release_date);
+      return dateB.getTime() - dateA.getTime(); // 降順（新しい順）
+    });
+    
     // ページネーション適用
     const startIndex = parseInt(offset);
     const endIndex = startIndex + parseInt(limit);
-    const paginatedTracks = uniqueTracks.slice(startIndex, endIndex);
+    const paginatedTracks = sortedTracks.slice(startIndex, endIndex);
 
     return NextResponse.json({
       tracks: paginatedTracks,

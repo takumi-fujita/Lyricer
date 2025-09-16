@@ -1,0 +1,214 @@
+{
+  "lyric": [
+    {
+      "part": ["LEO"],
+      "lyric": "理解不能",
+      "startTimeMs": 11000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "それはそうさ",
+      "startTimeMs": 13000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "錆びたルールじゃ僕は測れやしない",
+      "startTimeMs": 15000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "振り切ったステータス",
+      "startTimeMs": 18000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "最高傑作",
+      "startTimeMs": 20000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "が最低条件だったんだ",
+      "startTimeMs": 22000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "なぁゼロからスタートして目に入った冠は全部持っていく 努力も苦じゃない 運すらも引き寄せてく俺はtaboo 君の常識と俺達のリミット どっちが正しいのかな？言うまでも無い ほら見な神の導きを",
+      "startTimeMs": 24000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "遥か昔から確かな価値を探した足跡が その声が",
+      "startTimeMs": 37000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "求めた答えは最初から全て聞こえてた そうさ これが",
+      "startTimeMs": 44000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "M-A-S-T-E-R-P-L-A-N",
+      "startTimeMs": 50000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "飾りじゃない 代わりはないこれが",
+      "startTimeMs": 53000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "M-A-S-T-E-R-P-L-A-N",
+      "startTimeMs": 57000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "過去と未来 重ね導くのさ",
+      "startTimeMs": 60000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "I know...",
+      "startTimeMs": 64000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "I know, it is our fate",
+      "startTimeMs": 68000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "I know...",
+      "startTimeMs": 71000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "I know, it is our fate",
+      "startTimeMs": 75000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "簡単な答え 証明し続けるだけ 成功以外一回も見てない 当然の万馬券 いつから見てたこの場面？ スタートのもっとずっと前 衝撃的瞬間の連続をプレゼント ほらもう時間だぜ",
+      "startTimeMs": 81000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "期待通りじゃ物足りない",
+      "startTimeMs": 95000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "想像以上が当たり前",
+      "startTimeMs": 98000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "ゴールにはまだ早い",
+      "startTimeMs": 101000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "君ももう抜け出せない",
+      "startTimeMs": 104000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "遥か昔から確かな価値を探した足跡が その声が",
+      "startTimeMs": 108000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "求めた答えは最初から全て聞こえてた No doubt I'll show you",
+      "startTimeMs": 114000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "M-A-S-T-E-R-P-L-A-N",
+      "startTimeMs": 121000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "飾りじゃない 代わりはないこれが",
+      "startTimeMs": 124000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "M-A-S-T-E-R-P-L-A-N",
+      "startTimeMs": 128000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "過去と未来 重ね導くのさ",
+      "startTimeMs": 131000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "I know...",
+      "startTimeMs": 134000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "I know, it is our fate",
+      "startTimeMs": 139000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "I know...",
+      "startTimeMs": 141000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "I know, it is our fate",
+      "startTimeMs": 145000
+    },
+    {
+      "part": ["LEO"],
+      "lyric": "遥か昔から確かな価値を探した足跡が その声が",
+      "startTimeMs": 159000
+    },
+    {
+      "part": ["RYUHEI"],
+      "lyric": "求めた答えは最初から全て聞こえてた そうさ これが Masterplan",
+      "startTimeMs": 166000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "M-A-S-T-E-R-P-L-A-N",
+      "startTimeMs": 175000
+    },
+    {
+      "part": ["SHUNTO"],
+      "lyric": "飾りじゃない 代わりはないこれが",
+      "startTimeMs": 178000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "M-A-S-T-E-R-P-L-A-N",
+      "startTimeMs": 182000
+    },
+    {
+      "part": ["JUNON"],
+      "lyric": "過去と未来 重ね導くのさ",
+      "startTimeMs": 185000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "I know...",
+      "startTimeMs": 188000
+    },
+    {
+      "part": ["RYOKI"],
+      "lyric": "I know, it is our fate",
+      "startTimeMs": 193000
+    },
+    {
+      "part": ["SOTA"],
+      "lyric": "I know...",
+      "startTimeMs": 195000
+    },
+    {
+      "part": ["MANATO"],
+      "lyric": "I know, it is our fate",
+      "startTimeMs": 200000
+    }
+  ]
+}
